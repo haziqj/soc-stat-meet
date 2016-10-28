@@ -1,0 +1,44 @@
+\begin{thebibliography}{}
+
+\bibitem[Casella and Moreno, 2006]{Casella2006}
+Casella, G. and Moreno, E. (2006).
+\newblock {Objective Bayesian Variable Selection}.
+\newblock {\em Journal of the American Statistical Association},
+  101(473):157--167.
+
+\bibitem[Dellaportas et~al., 2002]{Dellaportas2002}
+Dellaportas, P., Forster, J.~J., and Ntzoufras, I. (2002).
+\newblock {On Bayesian model and variable selection using MCMC}.
+\newblock {\em Statistics and Computing}, 12(1):27--36.
+
+\bibitem[George and McCulloch, 1993]{George1993}
+George, E.~I. and McCulloch, R.~E. (1993).
+\newblock {Variable Selection Via Gibbs Sampling}.
+\newblock {\em Journal of the American Statistical Association},
+  88(423):881--889.
+
+\bibitem[Kuo and Mallick, 1998]{Kuo1998}
+Kuo, L. and Mallick, B. (1998).
+\newblock {Variable selection for regression models}.
+\newblock {\em Sankhya: The Indian Journal of Statistics, Series B},
+  60(1):65--81.
+
+\bibitem[McDonald and Schwing, 1973]{McDonald1973}
+McDonald, G.~C. and Schwing, R.~C. (1973).
+\newblock {Instabilities of regression estimates relating air pollution to
+  mortality}.
+\newblock {\em Technometrics}, 15(3):463--481.
+
+\bibitem[Ntzoufras, 2011]{Ntzoufras2008}
+Ntzoufras, I. (2011).
+\newblock {\em {Bayesian Modeling Using WinBUGS}}.
+\newblock Wiley.
+
+\bibitem[Zellner, 1986]{Zellner1986}
+Zellner, A. (1986).
+\newblock {On assessing prior distributions and Bayesian regresison analysis
+  with g-prior distributions}.
+\newblock {\em Bayesian Inference and Decision Techniques: Essays in Honor of
+  Bruno de Finetti}, pages 233--243.
+
+\end{thebibliography}

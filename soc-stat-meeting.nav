@@ -1,0 +1,150 @@
+\beamer@endinputifotherversion {3.36pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Bayesian Variable Selection}{3}{Bayesian Variable Selection}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{The I-prior Bayesian Variable Selection model}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{The I-prior Bayesian Variable Selection model}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{1}{2}{4/5}{The I-prior Bayesian Variable Selection model}{0}}
+\headcommand {\beamer@framepages {4}{5}}
+\headcommand {\slideentry {1}{1}{3}{6/10}{The I-prior Bayesian Variable Selection model}{0}}
+\headcommand {\beamer@framepages {6}{10}}
+\headcommand {\slideentry {1}{1}{4}{11/11}{The I-prior Bayesian Variable Selection model}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {2}{I-priors}{12}{I-priors}{0}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@subsectionpages {3}{11}}
+\headcommand {\slideentry {2}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Introduction}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {2}{1}{1}{13/14}{Introduction}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\slideentry {2}{1}{2}{15/15}{Introduction}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{1}{3}{16/21}{Introduction}{0}}
+\headcommand {\beamer@framepages {16}{21}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{22}{Estimation}}\headcommand {\beamer@subsectionpages {13}{21}}
+\headcommand {\slideentry {2}{2}{1}{22/22}{Estimation}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {2}{2}{2}{23/23}{Estimation}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{24}{The R/iprior package}}\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\slideentry {2}{3}{1}{24/31}{The R/iprior package}{0}}
+\headcommand {\beamer@framepages {24}{31}}
+\headcommand {\sectionentry {3}{Bayesian I-prior models}{32}{Bayesian I-prior linear models}{0}}
+\headcommand {\beamer@sectionpages {12}{31}}
+\headcommand {\beamer@subsectionpages {24}{31}}
+\headcommand {\slideentry {3}{0}{1}{32/32}{}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{33}{The beta I-prior (linear) model}}\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\slideentry {3}{1}{1}{33/36}{The beta I-prior (linear) model}{0}}
+\headcommand {\beamer@framepages {33}{36}}
+\headcommand {\slideentry {3}{1}{2}{37/37}{The beta I-prior (linear) model}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{38}{Shrinkage properties of I-priors}}\headcommand {\beamer@subsectionpages {33}{37}}
+\headcommand {\slideentry {3}{2}{1}{38/42}{Shrinkage properties of I-priors}{0}}
+\headcommand {\beamer@framepages {38}{42}}
+\headcommand {\slideentry {3}{2}{2}{43/43}{Shrinkage properties of I-priors}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{44}{Full Bayes estimation}}\headcommand {\beamer@subsectionpages {38}{43}}
+\headcommand {\slideentry {3}{3}{1}{44/44}{Full Bayes estimation}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {3}{3}{2}{45/49}{Full Bayes estimation}{0}}
+\headcommand {\beamer@framepages {45}{49}}
+\headcommand {\slideentry {3}{3}{3}{50/50}{Full Bayes estimation}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\sectionentry {4}{Hamiltonian Monte Carlo}{51}{Hamiltonian Monte Carlo}{0}}
+\headcommand {\beamer@sectionpages {32}{50}}
+\headcommand {\beamer@subsectionpages {44}{50}}
+\headcommand {\slideentry {4}{0}{1}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{52}{Hamiltonian dynamics}}\headcommand {\beamer@subsectionpages {51}{51}}
+\headcommand {\slideentry {4}{1}{1}{52/52}{Hamiltonian dynamics}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {4}{1}{2}{53/55}{Hamiltonian dynamics}{0}}
+\headcommand {\beamer@framepages {53}{55}}
+\headcommand {\slideentry {4}{1}{3}{56/57}{Hamiltonian dynamics}{0}}
+\headcommand {\beamer@framepages {56}{57}}
+\headcommand {\slideentry {4}{1}{4}{58/58}{Hamiltonian dynamics}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{59}{The HMC algorithm}}\headcommand {\beamer@subsectionpages {52}{58}}
+\headcommand {\slideentry {4}{2}{1}{59/63}{The HMC algorithm}{0}}
+\headcommand {\beamer@framepages {59}{63}}
+\headcommand {\slideentry {4}{2}{2}{64/65}{The HMC algorithm}{0}}
+\headcommand {\beamer@framepages {64}{65}}
+\headcommand {\slideentry {4}{2}{3}{66/74}{The HMC algorithm}{0}}
+\headcommand {\beamer@framepages {66}{74}}
+\headcommand {\slideentry {4}{2}{4}{75/75}{The HMC algorithm}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{76}{HMC software}}\headcommand {\beamer@subsectionpages {59}{75}}
+\headcommand {\slideentry {4}{3}{1}{76/76}{HMC software}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {4}{3}{2}{77/84}{HMC software}{0}}
+\headcommand {\beamer@framepages {77}{84}}
+\headcommand {\slideentry {4}{3}{3}{85/85}{HMC software}{0}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\slideentry {4}{3}{4}{86/86}{HMC software}{0}}
+\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\slideentry {4}{3}{5}{87/87}{HMC software}{0}}
+\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {4}{3}{6}{88/88}{HMC software}{0}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\sectionentry {5}{Summary}{89}{Summary}{0}}
+\headcommand {\beamer@sectionpages {51}{88}}
+\headcommand {\beamer@subsectionpages {76}{88}}
+\headcommand {\slideentry {5}{0}{1}{89/89}{}{0}}
+\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\slideentry {5}{0}{2}{90/90}{}{0}}
+\headcommand {\beamer@framepages {90}{90}}
+\headcommand {\slideentry {5}{0}{3}{91/91}{}{0}}
+\headcommand {\beamer@framepages {91}{91}}
+\headcommand {\slideentry {5}{0}{4}{92/92}{}{0}}
+\headcommand {\beamer@framepages {92}{92}}
+\headcommand {\slideentry {5}{0}{5}{93/93}{}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\slideentry {5}{0}{5}{93/94}{}{0}}
+\headcommand {\beamer@framepages {93}{94}}
+\headcommand {\slideentry {5}{0}{6}{95/95}{}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\slideentry {5}{0}{7}{96/96}{}{0}}
+\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {5}{0}{7}{96/97}{}{0}}
+\headcommand {\beamer@framepages {96}{97}}
+\headcommand {\sectionentry {6}{End}{98}{End}{0}}
+\headcommand {\beamer@sectionpages {89}{97}}
+\headcommand {\beamer@subsectionpages {89}{97}}
+\headcommand {\slideentry {6}{0}{1}{98/98}{}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\partentry {Appendix}{1}}
+\headcommand {\beamer@partpages {1}{98}}
+\headcommand {\beamer@sectionpages {98}{98}}
+\headcommand {\beamer@subsectionpages {98}{98}}
+\headcommand {\beamer@appendixpages {99}}
+\headcommand {\slideentry {6}{0}{2}{99/99}{}{1}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\sectionentry {7}{Additional material}{100}{Additional material}{1}}
+\headcommand {\beamer@sectionpages {99}{99}}
+\headcommand {\beamer@subsectionpages {99}{99}}
+\headcommand {\beamer@subsectionentry {1}{7}{1}{100}{lme4 methods}}\headcommand {\beamer@subsectionpages {100}{99}}
+\headcommand {\slideentry {7}{1}{1}{100/100}{lme4 methods}{1}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {7}{1}{2}{101/102}{lme4 methods}{1}}
+\headcommand {\beamer@framepages {101}{102}}
+\headcommand {\slideentry {7}{1}{3}{103/103}{lme4 methods}{1}}
+\headcommand {\beamer@framepages {103}{103}}
+\headcommand {\slideentry {7}{1}{4}{104/105}{lme4 methods}{1}}
+\headcommand {\beamer@framepages {104}{105}}
+\headcommand {\slideentry {7}{1}{5}{106/106}{lme4 methods}{1}}
+\headcommand {\beamer@framepages {106}{106}}
+\headcommand {\beamer@subsectionentry {1}{7}{2}{107}{MLE vs Bayes for scale parameters}}\headcommand {\beamer@subsectionpages {100}{106}}
+\headcommand {\slideentry {7}{2}{1}{107/107}{MLE vs Bayes for scale parameters}{1}}
+\headcommand {\beamer@framepages {107}{107}}
+\headcommand {\beamer@partpages {99}{107}}
+\headcommand {\beamer@subsectionpages {107}{107}}
+\headcommand {\beamer@sectionpages {100}{107}}
+\headcommand {\beamer@documentpages {107}}
+\headcommand {\def \inserttotalframenumber {36}}

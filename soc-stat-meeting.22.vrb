@@ -1,0 +1,41 @@
+\frametitle{Estimation using JAGS}
+\only<1>{
+		\begin{itemize}
+			\item Fit Bayesian models using JAGS (or WinBUGS or OpenBUGS).
+			\item In R, many packages to run JAGS models: \texttt{rjags}, \texttt{R2Jags}, \texttt{runjags}.
+			\item We will use \texttt{runjags} as it allows easy parallelisation of chains.
+			\item Simulate a dataset:
+		\end{itemize}
+		\usebox{\ipriorjagsforshow}
+	}
+
+	\only<2>{\vspace{-1mm} \usebox{\ipriorjagsb}}
+
+	\only<3>{\vspace{-2mm} \usebox{\ipriorjagsc}}
+
+	\only<4>{
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/iprior_jags4-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<5>{
+		\vspace{-1mm}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=1.05\linewidth]{figure/iprior_jags5-1}
+
+}
+
+
+
+\end{knitrout}
+	}

@@ -1,0 +1,53 @@
+\frametitle{Stan example}
+\only<1>{\vspace{-2mm} \usebox{\stana}}
+	\only<2>{\vspace{-2mm} \usebox{\stanb}}
+
+	\only<3-5>{
+		\begin{itemize}
+			\item Compile the Stan model.
+		\end{itemize}
+		\usebox{\stancomp}
+	}
+
+	\only<4-5>{
+		\begin{itemize}
+			\item Set the data for Stan to use.
+		\end{itemize}
+		\usebox{\standata}
+	}
+
+	\only<5-5>{
+		\begin{itemize}
+			\item Begin sampling
+		\end{itemize}
+		\usebox{\stansamp}
+	}
+
+	\only<6>{\vspace{-1mm} \usebox{\stanres}}
+
+	\only<7>{
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=1.05\linewidth]{figure/stanplot-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<8>{
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=1.05\linewidth]{figure/lambdastan-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+

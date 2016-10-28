@@ -1,0 +1,32 @@
+\frametitle{Stan language}
+\begin{lstlisting}
+		functions {
+			...
+		}
+		data {
+			int n;
+			int p;
+			vector[n] y;
+			matrix[n,p] X;
+		}
+		transformed data {
+			...
+		}
+		parameters {
+			real<lower=0> sigma;
+			vector beta[p];
+		}
+		transformed parameters {
+			vector mu[p];
+			mu = X * beta;
+		}
+		model {
+			target += cauchy_lpdf(beta | 0, 10);
+			target += normal_lpdf(y | mu, sigma);
+		}
+		generated quantities {
+			vector[n] y_pred;
+			for (i in 1:n)
+				y_pred[i] = normal_rng(X[i] * beta, sigma);
+		}
+	\end{lstlisting}

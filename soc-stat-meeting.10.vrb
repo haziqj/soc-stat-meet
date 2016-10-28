@@ -1,0 +1,111 @@
+\frametitle{The R/iprior package}
+
+	\only<1>{
+		\begin{itemize}
+			\item An R package for regression modelling using I-priors.
+			\begin{itemize}
+				\item Similar syntax to R's \texttt{lm()}.
+				\item Parameters estimated using maximum likelihood.
+				\item Available on \href{https://cran.r-project.org/web/packages/iprior/index.html}{CRAN} and \href{https://github.com/haziqjamil/iprior/}{GitHub}.
+			\end{itemize}
+			\item Example: Look at how students' mathematics achievement varies across different high schools (High School \& Beyond dataset).
+		\end{itemize}
+		\usebox{\ipriordemoa}
+	}
+
+	\only<2>{
+		\vspace{2mm}
+		\begin{itemize}
+			\item Fit a straight line regressing \texttt{mathach} against \texttt{ses}.
+		\end{itemize}
+		\usebox{\ipriordemob}
+	}
+
+	\only<3>{
+		\begin{itemize}
+			\item Obtain the parameter estimates. Can also do \texttt{summary(mod)}.
+		\end{itemize}
+		\usebox{\ipriordemoc}
+	}
+
+	\only<4>{
+	\vspace{-1mm}
+	\usebox{\ipriordemod} \\
+	\vspace{2em}
+	\vspace{-2mm}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=0.98\linewidth]{figure/iprior_demo4a-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<5>{
+	\vspace{-1mm}
+	\usebox{\ipriordemoe} \\
+	\vspace{-2mm}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=0.98\linewidth]{figure/iprior_demo5b-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<6>{
+	\vspace{-1mm}
+	\usebox{\ipriordemof} \\
+	\vspace{-2mm}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=0.98\linewidth]{figure/iprior_demo6b-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<7>{
+	\vspace{-1mm}
+	\usebox{\ipriordemog} \\
+	\vspace{-2mm}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=0.98\linewidth]{figure/iprior_demo7b-1}
+
+}
+
+
+
+\end{knitrout}
+	}
+
+	\only<8>{
+		\begin{itemize}
+			\item Compare mean squared errors and log-likelihood values of models.
+		\end{itemize}
+		\usebox{\ipriordemoh}
+		\begin{itemize}
+			\item Other things available:
+			\begin{itemize}
+				\item \texttt{fitted()} for fitted values.
+				\item \texttt{predict()} for fitted values of a new set of covariates.
+				\item \texttt{resid()} for model residuals.
+				\item \texttt{logLik()} and \texttt{deviance()} for model log-likelihood and deviance values respectively.
+				\item \texttt{ipriorOptim()} is a routine which combines EM algorithm and direct optimisation.
+			\end{itemize}
+		\end{itemize}
+	}
