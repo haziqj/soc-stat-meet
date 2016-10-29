@@ -101,9 +101,6 @@ numbers=none}
 \usepackage[resetlabels,labeled]{multibib}
 \newcites{Tools}{Stuff}
 \newcites{HMC}{HMC}
-%\usepackage{natbib}
-%	\bibpunct{(}{)}{;}{a}{,}{,~}
-%	\addto\captionsenglish{\renewcommand{\bibname}{References}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% PRESENTATION SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,7 +111,9 @@ numbers=none}
 \institute[LSE]{Social Statistics (Year 3)\\ London School of Economics \& Political Science}
 \date[3 Nov 2016]{3 November 2016\\
 \hspace{1cm}\\
-Social Statistics Meeting}
+Social Statistics Meeting\\
+\hspace{1cm}\\
+follow along at: \href{https://haziqjamil.github.io/}{\color{fu-red} \textbf{https://haziqjamil.github.io/}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -436,6 +435,13 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 \newsavebox{\ipriordemoa}
 \begin{lrbox}{\ipriordemoa}
 <<iprior.demo1>>=
+str(hsbsmall, width = 58, strict.width = "cut")
+@
+\end{lrbox}
+
+\newsavebox{\ipriordemoaa}
+\begin{lrbox}{\ipriordemoaa}
+<<iprior.demo1a, eval = FALSE>>=
 str(hsbsmall)
 @
 \end{lrbox}
@@ -520,7 +526,8 @@ tab
 
 \begin{frame}[fragile]{The R/iprior package}
 
-	\only<1>{
+	\only<1-2>{
+		\vspace{-12mm}
 		\begin{itemize}
 			\item An R package for regression modelling using I-priors.
 			\begin{itemize}
@@ -528,12 +535,19 @@ tab
 				\item Parameters estimated using maximum likelihood.
 				\item Available on \href{https://cran.r-project.org/web/packages/iprior/index.html}{CRAN} and \href{https://github.com/haziqjamil/iprior/}{GitHub}.
 			\end{itemize}
+		\end{itemize}
+	}
+	
+	\only<2>{
+		\begin{itemize}
 			\item Example: Look at how students' mathematics achievement varies across different high schools (High School \& Beyond dataset).
 		\end{itemize}
-		\usebox{\ipriordemoa}
+		\usebox{\ipriordemoa} \\
+		\vspace{-26mm}
+		\usebox{\ipriordemoaa}
 	}
 
-	\only<2>{
+	\only<3>{
 		\vspace{2mm}
 		\begin{itemize}
 			\item Fit a straight line regressing \texttt{mathach} against \texttt{ses}.
@@ -541,14 +555,14 @@ tab
 		\usebox{\ipriordemob}
 	}
 
-	\only<3>{
+	\only<4>{
 		\begin{itemize}
 			\item Obtain the parameter estimates. Can also do \texttt{summary(mod)}.
 		\end{itemize}
 		\usebox{\ipriordemoc}
 	}
 	
-	\only<4>{
+	\only<5>{
 	\vspace{-1mm}
 	\usebox{\ipriordemod} \\
 	\vspace{2em}
@@ -558,7 +572,7 @@ tab
 	@
 	}
 	
-	\only<5>{
+	\only<6>{
 	\vspace{-1mm}
 	\usebox{\ipriordemoe} \\
 	\vspace{-2mm}
@@ -567,7 +581,7 @@ tab
 	@
 	}	
 	
-	\only<6>{
+	\only<7>{
 	\vspace{-1mm}
 	\usebox{\ipriordemof} \\
 	\vspace{-2mm}
@@ -576,7 +590,7 @@ tab
 	@
 	}	
 	
-	\only<7>{
+	\only<8>{
 	\vspace{-1mm}
 	\usebox{\ipriordemog} \\
 	\vspace{-2mm}
@@ -585,7 +599,7 @@ tab
 	@
 	}	
 
-	\only<8>{
+	\only<9>{
 		\begin{itemize}
 			\item Compare mean squared errors and log-likelihood values of models.
 		\end{itemize}
@@ -865,14 +879,14 @@ mod <- "
 	\only<5>{
 		\vspace{-1mm}
 		<<iprior.jags5, eval = TRUE, echo = FALSE, fig.width = 9, fig.height = 5.5, out.width = "105%">>=
-		ggs_running(mod.fit.ggs, family = "lambda")
+		ggs_traceplot(mod.fit.ggs, family = "lambda")
 		@
 	}
 \end{frame}
 
 \begin{frame}{Problems}
 	\begin{itemize}
-		\item Trace plot of $\lambda_k$ very erratic, and samples found to be severely autocorrelated.
+		\item Trace plot of $\lambda_k$ can be very erratic, and samples found to be severely autocorrelated.
 		\item Since the scale parameters are very important for Bayesian Variable Selection, it is imperative that these are estimated correctly.
 		\item Suggestions:
 		\begin{itemize}
@@ -1641,7 +1655,7 @@ print(fit.stan)
 \begin{frame}{What we've seen today}
 	\begin{enumerate}[1]
 		\item I-prior models estimated using ML methods (EM algorithm) and use of the \texttt{iprior} package in R.
-		\item \texttt{lme4} style of estimating mixed-effects models using sparse Cholesky decomposition.
+%		\item \texttt{lme4} style of estimating mixed-effects models using sparse Cholesky decomposition.
 		\item Shrinkage properties of I-priors for use in Bayesian variable selection.
 		\item Bayesian estimation in JAGS.
 		\item Shiny apps for reactive programming.
