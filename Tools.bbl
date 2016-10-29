@@ -1,29 +1,44 @@
 \begin{thebibliography}{}
 
-\bibitem[Chang et~al., 2016]{}
+\bibitem[Chang et~al., 2016]{shiny}
 Chang, W., Cheng, J., Allaire, J., Xie, Y., and McPherson, J. (2016).
 \newblock {\em shiny: Web Application Framework for R}.
 \newblock R package version 0.13.2.
 
+\bibitem[GitHub, ]{github}
+GitHub.
+\newblock {\em GitHub Guides}.
+\newblock \url{https://guides.github.com}.
+
+\bibitem[Jamil, 2016]{iprior}
+Jamil, H. (2016).
+\newblock {\em iprior: Linear Regression using I-Priors}.
+\newblock R package version 0.6.2. \url{https://haziqjamil.github.io/iprior}.
+
 \bibitem[Plummer, 2016]{rjags}
 Plummer, M. (2016).
 \newblock {\em rjags: Bayesian Graphical Models using MCMC}.
-\newblock R package version 4-6. https://CRAN.R-project.org/package=rjags.
+\newblock R package version 4-6.
+
+\bibitem[{RStudio Team}, 2015]{rstudio}
+{RStudio Team} (2015).
+\newblock {\em RStudio: Integrated Development Environment for R}.
+\newblock RStudio, Inc., Boston, MA. \url{http://www.rstudio.com}.
 
 \bibitem[{Stan Development Team}, 2015]{stan}
 {Stan Development Team} (2015).
 \newblock {\em Stan: A C++ Library for Probability and Sampling}.
-\newblock Version 2.10.0. http://mc-stan.org/.
+\newblock Version 2.10.0. \url{http://mc-stan.org}.
 
 \bibitem[Wickham, 2015]{wickham2015r}
 Wickham, H. (2015).
 \newblock {\em {R Packages: Organize, Test, Document, and Share Your Code}}.
-\newblock O'Reilly Media, Inc. http://r-pkgs.had.co.nz.
+\newblock O'Reilly Media, Inc. \url{http://r-pkgs.had.co.nz}.
 
 \bibitem[Xie, 2016]{knitr}
 Xie, Y. (2016).
 \newblock {\em knitr: A General-Purpose Package for Dynamic Report Generation
   in R}.
-\newblock R package version 1.14. http://yihui.name/knitr/.
+\newblock R package version 1.14. \url{http://yihui.name/knitr}.
 
 \end{thebibliography}

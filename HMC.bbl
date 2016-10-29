@@ -4,12 +4,17 @@
 Betancourt, M. (2014).
 \newblock {Efficient Bayesian inference with Hamiltonian Monte Carlo}.
 \newblock {\em Machine Learning Summer School (Iceland 2014).
-  https://www.youtube.com/watch?v=pHsuIaPbNbY}.
+  \url{https://www.youtube.com/watch?v=pHsuIaPbNbY}}.
 
 \bibitem[Betancourt, 2016]{Betancourt2016}
 Betancourt, M. (2016).
 \newblock {Scalable Bayesian Inference with Hamiltonian Monte Carlo}.
-\newblock {\em Tokyo Stan. https://www.youtube.com/watch?v=VnNdhsm0rJQ}.
+\newblock {\em Tokyo Stan. \url{https://www.youtube.com/watch?v=VnNdhsm0rJQ}}.
+
+\bibitem[Duane et~al., 1987]{duane1987hybrid}
+Duane, S., Kennedy, A.~D., Pendleton, B.~J., and Roweth, D. (1987).
+\newblock Hybrid monte carlo.
+\newblock {\em Physics letters B}, 195(2):216--222.
 
 \bibitem[Neal et~al., 2011]{neal2011mcmc}
 Neal, R.~M. et~al. (2011).

@@ -1,31 +1,34 @@
 \frametitle{Stan example}
-\only<1>{\vspace{-2mm} \usebox{\stana}}
-	\only<2>{\vspace{-2mm} \usebox{\stanb}}
+\only<1|handout:1>{\vspace{-2mm} \usebox{\stana}}
+	\only<2|handout:2>{\vspace{-2mm} \usebox{\stanb}}
 
-	\only<3-5>{
+	\begin{overlayarea}{\textwidth}{8cm}
+	\only<3-5|handout:3>{
+		\vspace{4mm}
 		\begin{itemize}
 			\item Compile the Stan model.
 		\end{itemize}
 		\usebox{\stancomp}
 	}
 
-	\only<4-5>{
+	\only<4-5|handout:3>{
 		\begin{itemize}
 			\item Set the data for Stan to use.
 		\end{itemize}
 		\usebox{\standata}
 	}
 
-	\only<5-5>{
+	\only<5-5|handout:3>{
 		\begin{itemize}
 			\item Begin sampling
 		\end{itemize}
 		\usebox{\stansamp}
 	}
 
-	\only<6>{\vspace{-1mm} \usebox{\stanres}}
+	\only<6|handout:4>{\vspace{-4mm} \usebox{\stanres}}
 
-	\only<7>{
+	\only<7|handout:5>{
+	\vspace{-4mm}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
@@ -38,7 +41,8 @@
 \end{knitrout}
 	}
 
-	\only<8>{
+	\only<8|handout:6>{
+	\vspace{-4mm}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
@@ -50,4 +54,6 @@
 
 \end{knitrout}
 	}
+
+	\end{overlayarea}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.14)  29 OCT 2016 02:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.14)  29 OCT 2016 20:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,25 +737,39 @@ Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
  (./HMC.aux)
 \openout6 = `HMC.aux'.
 
+\@auxoutlme=\write7
+ (./lme.aux)
+\openout7 = `lme.aux'.
+
  (/usr/local/texlive/2015/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-) (./soc-stat-meet.aux)
+) (./soc-stat-meet.aux
+
+LaTeX Warning: Label `eq:betaiprior2' multiply defined.
+
+
+LaTeX Warning: Label `c<1>' multiply defined.
+
+
+LaTeX Warning: Label `c' multiply defined.
+
+)
 \openout1 = `soc-stat-meet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -816,7 +830,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 172.
+Package hyperref Info: Link coloring OFF on input line 176.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -824,62 +838,62 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count183
 )
-LaTeX Info: Redefining \ref on input line 172.
-LaTeX Info: Redefining \pageref on input line 172.
-LaTeX Info: Redefining \nameref on input line 172.
+LaTeX Info: Redefining \ref on input line 176.
+LaTeX Info: Redefining \pageref on input line 176.
+LaTeX Info: Redefining \nameref on input line 176.
  (./soc-stat-meet.out) (./soc-stat-meet.out)
-\@outlinefile=\write7
-\openout7 = `soc-stat-meet.out'.
+\@outlinefile=\write8
+\openout8 = `soc-stat-meet.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 172.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 176.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 172.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 176.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 172.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 172.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 172.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 172.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 176.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 172.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 172.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 172.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 176.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 172.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 172.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 172.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 176.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 172.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 172.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 176.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 172.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 176.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 172.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 172.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 172.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 172.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 172.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 176.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 172.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 172.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 176.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 176.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 172.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 176.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 172.
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 176.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 172.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 176.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
@@ -893,7 +907,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 172.
+LaTeX Info: Redefining \includegraphics on input line 176.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
@@ -982,24 +996,24 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./soc-stat-meet.toc)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 198.
+(Font)              size <5> substituted on input line 202.
 
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+cmss on input line 234.
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 238.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 234.
+LaTeX Font Info:    Try loading font information for U+msa on input line 238.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 234.
+LaTeX Font Info:    Try loading font information for U+msb on input line 238.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 234.
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 238.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [3
@@ -1011,50 +1025,50 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mat
 ] <figure/sim5.png, id=343, 2559.5625pt x 1665.22125pt>
 File: figure/sim5.png Graphic file (type png)
  <use figure/sim5.png>
-Package pdftex.def Info: figure/sim5.png used on input line 277.
+Package pdftex.def Info: figure/sim5.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
  <figure/sim1.png, id=345, 2559.5625pt x 1665.22125pt>
 File: figure/sim1.png Graphic file (type png)
  <use figure/sim1.png>
-Package pdftex.def Info: figure/sim1.png used on input line 277.
+Package pdftex.def Info: figure/sim1.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 <figure/sim2.png, id=346, 2559.5625pt x 1666.225pt>
 File: figure/sim2.png Graphic file (type png)
  <use figure/sim2.png>
-Package pdftex.def Info: figure/sim2.png used on input line 277.
+Package pdftex.def Info: figure/sim2.png used on input line 281.
 (pdftex.def)             Requested size: 344.12003pt x 224.03743pt.
 
-Overfull \hbox (1.82472pt too wide) in paragraph at lines 277--277
+Overfull \hbox (1.82472pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 <figure/sim3.png, id=347, 2559.5625pt x 1665.22125pt>
 File: figure/sim3.png Graphic file (type png)
  <use figure/sim3.png>
-Package pdftex.def Info: figure/sim3.png used on input line 277.
+Package pdftex.def Info: figure/sim3.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 <figure/sim6.png, id=348, 2559.5625pt x 1686.3pt>
 File: figure/sim6.png Graphic file (type png)
  <use figure/sim6.png>
-Package pdftex.def Info: figure/sim6.png used on input line 277.
+Package pdftex.def Info: figure/sim6.png used on input line 281.
 (pdftex.def)             Requested size: 340.05823pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 
-Overfull \vbox (17.38292pt too high) detected at line 277
+Overfull \vbox (17.38292pt too high) detected at line 281
  []
 
 [6
@@ -1062,46 +1076,46 @@ Overfull \vbox (17.38292pt too high) detected at line 277
  <./figure/sim5.png>]
 File: figure/sim5.png Graphic file (type png)
  <use figure/sim5.png>
-Package pdftex.def Info: figure/sim5.png used on input line 277.
+Package pdftex.def Info: figure/sim5.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim1.png Graphic file (type png)
 <use figure/sim1.png>
-Package pdftex.def Info: figure/sim1.png used on input line 277.
+Package pdftex.def Info: figure/sim1.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 File: figure/sim2.png Graphic file (type png)
  <use figure/sim2.png>
-Package pdftex.def Info: figure/sim2.png used on input line 277.
+Package pdftex.def Info: figure/sim2.png used on input line 281.
 (pdftex.def)             Requested size: 344.12003pt x 224.03743pt.
 
-Overfull \hbox (1.82472pt too wide) in paragraph at lines 277--277
+Overfull \hbox (1.82472pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim3.png Graphic file (type png)
 <use figure/sim3.png>
-Package pdftex.def Info: figure/sim3.png used on input line 277.
+Package pdftex.def Info: figure/sim3.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim6.png Graphic file (type png)
 <use figure/sim6.png>
-Package pdftex.def Info: figure/sim6.png used on input line 277.
+Package pdftex.def Info: figure/sim6.png used on input line 281.
 (pdftex.def)             Requested size: 340.05823pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 
-Overfull \vbox (17.38292pt too high) detected at line 277
+Overfull \vbox (17.38292pt too high) detected at line 281
  []
 
 [7
@@ -1109,46 +1123,46 @@ Overfull \vbox (17.38292pt too high) detected at line 277
  <./figure/sim1.png>]
 File: figure/sim5.png Graphic file (type png)
  <use figure/sim5.png>
-Package pdftex.def Info: figure/sim5.png used on input line 277.
+Package pdftex.def Info: figure/sim5.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim1.png Graphic file (type png)
 <use figure/sim1.png>
-Package pdftex.def Info: figure/sim1.png used on input line 277.
+Package pdftex.def Info: figure/sim1.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim2.png Graphic file (type png)
 <use figure/sim2.png>
-Package pdftex.def Info: figure/sim2.png used on input line 277.
+Package pdftex.def Info: figure/sim2.png used on input line 281.
 (pdftex.def)             Requested size: 344.12003pt x 224.03743pt.
 File: figure/sim3.png Graphic file (type png)
  <use figure/sim3.png>
-Package pdftex.def Info: figure/sim3.png used on input line 277.
+Package pdftex.def Info: figure/sim3.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim6.png Graphic file (type png)
 <use figure/sim6.png>
-Package pdftex.def Info: figure/sim6.png used on input line 277.
+Package pdftex.def Info: figure/sim6.png used on input line 281.
 (pdftex.def)             Requested size: 340.05823pt x 224.03743pt.
 
-Overfull \hbox (1.82472pt too wide) in paragraph at lines 277--277
+Overfull \hbox (1.82472pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 
-Overfull \vbox (17.38292pt too high) detected at line 277
+Overfull \vbox (17.38292pt too high) detected at line 281
  []
 
 [8
@@ -1156,46 +1170,46 @@ Overfull \vbox (17.38292pt too high) detected at line 277
  <./figure/sim2.png>]
 File: figure/sim5.png Graphic file (type png)
  <use figure/sim5.png>
-Package pdftex.def Info: figure/sim5.png used on input line 277.
+Package pdftex.def Info: figure/sim5.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim1.png Graphic file (type png)
 <use figure/sim1.png>
-Package pdftex.def Info: figure/sim1.png used on input line 277.
+Package pdftex.def Info: figure/sim1.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim2.png Graphic file (type png)
 <use figure/sim2.png>
-Package pdftex.def Info: figure/sim2.png used on input line 277.
+Package pdftex.def Info: figure/sim2.png used on input line 281.
 (pdftex.def)             Requested size: 344.12003pt x 224.03743pt.
 
-Overfull \hbox (1.82472pt too wide) in paragraph at lines 277--277
+Overfull \hbox (1.82472pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim3.png Graphic file (type png)
 <use figure/sim3.png>
-Package pdftex.def Info: figure/sim3.png used on input line 277.
+Package pdftex.def Info: figure/sim3.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 File: figure/sim6.png Graphic file (type png)
  <use figure/sim6.png>
-Package pdftex.def Info: figure/sim6.png used on input line 277.
+Package pdftex.def Info: figure/sim6.png used on input line 281.
 (pdftex.def)             Requested size: 340.05823pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][] 
  []
 
 
-Overfull \vbox (17.38292pt too high) detected at line 277
+Overfull \vbox (17.38292pt too high) detected at line 281
  []
 
 [9
@@ -1203,46 +1217,46 @@ Overfull \vbox (17.38292pt too high) detected at line 277
  <./figure/sim3.png>]
 File: figure/sim5.png Graphic file (type png)
  <use figure/sim5.png>
-Package pdftex.def Info: figure/sim5.png used on input line 277.
+Package pdftex.def Info: figure/sim5.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim1.png Graphic file (type png)
 <use figure/sim1.png>
-Package pdftex.def Info: figure/sim1.png used on input line 277.
+Package pdftex.def Info: figure/sim1.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim2.png Graphic file (type png)
 <use figure/sim2.png>
-Package pdftex.def Info: figure/sim2.png used on input line 277.
+Package pdftex.def Info: figure/sim2.png used on input line 281.
 (pdftex.def)             Requested size: 344.12003pt x 224.03743pt.
 
-Overfull \hbox (1.82472pt too wide) in paragraph at lines 277--277
+Overfull \hbox (1.82472pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim3.png Graphic file (type png)
 <use figure/sim3.png>
-Package pdftex.def Info: figure/sim3.png used on input line 277.
+Package pdftex.def Info: figure/sim3.png used on input line 281.
 (pdftex.def)             Requested size: 344.35435pt x 224.03743pt.
 
-Overfull \hbox (2.05905pt too wide) in paragraph at lines 277--277
+Overfull \hbox (2.05905pt too wide) in paragraph at lines 281--281
 [][]  
  []
 
 File: figure/sim6.png Graphic file (type png)
 <use figure/sim6.png>
-Package pdftex.def Info: figure/sim6.png used on input line 277.
+Package pdftex.def Info: figure/sim6.png used on input line 281.
 (pdftex.def)             Requested size: 340.05823pt x 224.03743pt.
 
-Overfull \vbox (3.78291pt too high) detected at line 277
+Overfull \vbox (3.78291pt too high) detected at line 281
  []
 
 [10
@@ -1257,47 +1271,91 @@ Overfull \vbox (3.78291pt too high) detected at line 277
 
 ]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 367.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 371.
 
 
-Overfull \hbox (3.45369pt too wide) in paragraph at lines 367--367
+Overfull \hbox (3.45369pt too wide) in paragraph at lines 371--371
 []|$[]$| 
  []
 
 
-Overfull \hbox (2.05737pt too wide) in paragraph at lines 367--367
+Overfull \hbox (2.05737pt too wide) in paragraph at lines 371--371
 []|\OT1/cmss/m/n/10 Nominal| 
  []
 
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 367.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 371.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [15
 
 ]
-Overfull \vbox (48.16115pt too high) detected at line 417
+Overfull \vbox (7.36743pt too high) detected at line 431
  []
 
 [16
 
-] [17
+]
+Overfull \vbox (82.65407pt too high) detected at line 431
+ []
 
-] [18
 
-] [19
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
 
-] [20
+[17
 
-] [21
+]
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
 
-] [22
+[18
+
+]
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
+
+[19
+
+]
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
+
+[20
+
+]
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
+
+[21
+
+]
+Overfull \vbox (7.36743pt too high) detected at line 431
+ []
+
+[22
 
 ] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
 
 ]
 \ipriordemoa=\box64
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 475.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 495.
 \ipriordemoaa=\box65
 \ipriordemob=\box66
 \ipriordemoc=\box67
@@ -1308,160 +1366,272 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 \ipriordemoh=\box72
 \openout4 = `soc-stat-meet.vrb'.
 
- (./soc-stat-meet.vrb) [24
+ (./soc-stat-meet.vrb)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[32
 
 ] (./soc-stat-meet.vrb
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 22--22
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 23--23
 []  
  []
 
 
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 22--23
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 23--24
 [][] 
  []
 
-) [25
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[33
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 30--31
 [] 
  []
 
-) [26
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[34
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 37--38
 [] 
  []
 
-) [27
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[35
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 54--54
 [][]  
  []
 
-<figure/iprior_demo4a-1.pdf, id=1330, 614.295pt x 361.35pt>
+<figure/iprior_demo4a-1.pdf, id=1692, 614.295pt x 361.35pt>
 File: figure/iprior_demo4a-1.pdf Graphic file (type pdf)
  <use figure/iprior_demo4a-1.pdf>
 Package pdftex.def Info: figure/iprior_demo4a-1.pdf used on input line 54.
 (pdftex.def)             Requested size: 335.44792pt x 197.32608pt.
-)
-Overfull \vbox (11.96442pt too high) detected at line 731
+
+Overfull \vbox (0.2191pt too high) detected at line 123
  []
 
-[28
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[36
 
  <./figure/iprior_demo4a-1.pdf>] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 70--70
 [][]  
  []
 
-<figure/iprior_demo5b-1.pdf, id=1381, 614.295pt x 361.35pt>
+<figure/iprior_demo5b-1.pdf, id=1744, 614.295pt x 361.35pt>
 File: figure/iprior_demo5b-1.pdf Graphic file (type pdf)
  <use figure/iprior_demo5b-1.pdf>
 Package pdftex.def Info: figure/iprior_demo5b-1.pdf used on input line 70.
 (pdftex.def)             Requested size: 335.44792pt x 197.32608pt.
-)
-Overfull \vbox (10.15877pt too high) detected at line 731
+
+Overfull \vbox (0.93011pt too high) detected at line 123
  []
 
-[29
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[37
 
  <./figure/iprior_demo5b-1.pdf>] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 86--86
 [][]  
  []
 
-<figure/iprior_demo6b-1.pdf, id=1433, 614.295pt x 361.35pt>
+<figure/iprior_demo6b-1.pdf, id=1796, 614.295pt x 361.35pt>
 File: figure/iprior_demo6b-1.pdf Graphic file (type pdf)
  <use figure/iprior_demo6b-1.pdf>
 Package pdftex.def Info: figure/iprior_demo6b-1.pdf used on input line 86.
 (pdftex.def)             Requested size: 335.44792pt x 197.32608pt.
-)
-Overfull \vbox (10.15877pt too high) detected at line 731
+
+Overfull \vbox (0.93011pt too high) detected at line 123
  []
 
-[30
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
+
+[38
 
  <./figure/iprior_demo6b-1.pdf>] (./soc-stat-meet.vrb
 Overfull \hbox (3.33333pt too wide) in paragraph at lines 102--102
 [][]  
  []
 
-<figure/iprior_demo7b-1.pdf, id=1483, 614.295pt x 361.35pt>
+<figure/iprior_demo7b-1.pdf, id=1847, 614.295pt x 361.35pt>
 File: figure/iprior_demo7b-1.pdf Graphic file (type pdf)
  <use figure/iprior_demo7b-1.pdf>
 Package pdftex.def Info: figure/iprior_demo7b-1.pdf used on input line 102.
 (pdftex.def)             Requested size: 335.44792pt x 197.32608pt.
+
+Overfull \vbox (0.93011pt too high) detected at line 123
+ []
+
 )
-Overfull \vbox (10.15877pt too high) detected at line 731
- []
-
-[31
-
- <./figure/iprior_demo7b-1.pdf>] (./soc-stat-meet.vrb
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 119--119
-[] 
- []
-
-) [32
-
-] (./soc-stat-meet.toc) [33
-
-]
-Overfull \vbox (23.70514pt too high) detected at line 786
- []
-
-[34
-
-]
-Overfull \vbox (6.09863pt too high) detected at line 786
- []
-
-[35
-
-] [36
-
-] [37
-
-] [38
-
-]
-Overfull \vbox (9.26283pt too high) detected at line 851
+Overfull \vbox (10.21278pt too high) detected at line 756
  []
 
 [39
 
-] [40
+ <./figure/iprior_demo7b-1.pdf>] (./soc-stat-meet.vrb
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 109--122
+[] 
+ []
 
-] [41
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
 
-] [42
+[40
 
-] [43
+] (./soc-stat-meet.vrb
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 109--121
+[] 
+ []
 
-] [44
+)
+Overfull \vbox (10.21278pt too high) detected at line 756
+ []
 
-] [45
+[41
+
+] (./soc-stat-meet.toc) [42
+
+]
+Overfull \vbox (58.93251pt too high) detected at line 818
+ []
+
+
+Overfull \vbox (10.21278pt too high) detected at line 818
+ []
+
+[43
+
+]
+Overfull \vbox (41.326pt too high) detected at line 818
+ []
+
+
+Overfull \vbox (10.21278pt too high) detected at line 818
+ []
+
+[44
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 818
+ []
+
+[45
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 818
+ []
+
+[46
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 818
+ []
+
+[47
+
+] [48
+
+] [49
+
+]
+Overfull \vbox (25.81198pt too high) detected at line 890
+ []
+
+
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[50
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[51
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[52
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[53
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[54
+
+]
+Overfull \vbox (10.21278pt too high) detected at line 890
+ []
+
+[55
+
+] [56
+
+]
+Overfull \vbox (168.21092pt too high) detected at line 950
+ []
+
+[57
+
+pdfTeX warning (ext4): destination with the same identifier (name{eq:betaiprior2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.950 \end{frame}
+                 ]
+Overfull \vbox (11.10085pt too high) detected at line 950
+ []
+
+[58
 
 ]
 \ipriorjagsforshow=\box73
 \ipriorjagsb=\box74
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 937.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 937.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 1000.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 1000.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 937.
+(Font)              for symbol `textbraceleft' on input line 1000.
 
 \ipriorjagsc=\box75
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 948.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1011.
 
-Overfull \hbox (23.20995pt too wide) in paragraph at lines 972--972
-[]\OT1/cmtt/m/n/8 ## JAGS model summary statistics from 10000 samples (chains = 4; adapt+burnin = 5000):[] 
+Overfull \hbox (69.96062pt too wide) in paragraph at lines 1035--1035
+[]\OT1/cmtt/m/n/8 ## JAGS model summary statistics from 10000 samples (thin = 10; chains = 4; adapt+burnin = 5000):[] 
  []
 
 \openout4 = `soc-stat-meet.vrb'.
@@ -1471,34 +1641,41 @@ Overfull \hbox (3.33333pt too wide) in paragraph at lines 10--11
 [] 
  []
 
-) [46
+) [59
+
+] (./soc-stat-meet.vrb
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 10--11
+[] 
+ []
+
+) [60
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (2.83337pt too wide) in paragraph at lines 12--13
 [][]  
  []
 
-) [47
+) [61
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (2.83337pt too wide) in paragraph at lines 14--15
 [][]  
  []
 
-) [48
+) [62
 
-] (./soc-stat-meet.vrb <figure/iprior_jags4-1.pdf, id=2278, 505.89pt x 325.215pt>
+] (./soc-stat-meet.vrb <figure/iprior_jags4-1.pdf, id=2903, 505.89pt x 325.215pt>
 File: figure/iprior_jags4-1.pdf Graphic file (type pdf)
  <use figure/iprior_jags4-1.pdf>
 Package pdftex.def Info: figure/iprior_jags4-1.pdf used on input line 27.
 (pdftex.def)             Requested size: 342.2953pt x 220.05154pt.
 )
-Overfull \vbox (2.64229pt too high) detected at line 1018
+Overfull \vbox (2.64229pt too high) detected at line 1081
  []
 
-[49
+[63
 
- <./figure/iprior_jags4-1.pdf>] (./soc-stat-meet.vrb <figure/iprior_jags5-1.pdf, id=2328, 650.43pt x 397.485pt>
+ <./figure/iprior_jags4-1.pdf>] (./soc-stat-meet.vrb <figure/iprior_jags5-1.pdf, id=2952, 650.43pt x 397.485pt>
 File: figure/iprior_jags5-1.pdf Graphic file (type pdf)
  <use figure/iprior_jags5-1.pdf>
 Package pdftex.def Info: figure/iprior_jags5-1.pdf used on input line 41.
@@ -1508,175 +1685,185 @@ Overfull \hbox (17.1158pt too wide) in paragraph at lines 41--41
  [][] 
  []
 
-) [50
+) [64
 
- <./figure/iprior_jags5-1.pdf>] [51
+ <./figure/iprior_jags5-1.pdf>] [65
 
-] (./soc-stat-meet.toc) [52
+] (./soc-stat-meet.toc) [66
 
-] [53
+] [67
 
-] [54
+] [68
 
-] [55
+] [69
 
-] [56
+] [70
 
-] [57
+] [71
 
-] [58
+] [72
 
-] [59
+] [73
 
-] [60
+] [74
 
-] [61
+] [75
 
-] [62
+] [76
 
-] [63
+] [77
 
-] [64
+] [78
 
-] [65
+] [79
 
-] [66
+] [80
 
-] <figure/phaseportrait6-1.pdf, id=3075, 686.565pt x 289.08pt>
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] <figure/phaseportrait6-1.pdf, id=3920, 686.565pt x 289.08pt>
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (20.14738pt too high) detected at line 1326
+Overfull \vbox (20.14738pt too high) detected at line 1399
  []
 
-[67
+[86
 
  <./figure/phaseportrait6-1.pdf>]
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (20.14738pt too high) detected at line 1326
+Overfull \vbox (20.14738pt too high) detected at line 1399
  []
 
-[68
+[87
 
 ]
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (20.14738pt too high) detected at line 1326
+Overfull \vbox (20.14738pt too high) detected at line 1399
  []
 
-[69
+[88
 
-] <figure/phaseportrait1-1.pdf, id=3213, 686.565pt x 289.08pt>
+] <figure/phaseportrait1-1.pdf, id=4057, 686.565pt x 289.08pt>
 File: figure/phaseportrait1-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait1-1.pdf>
-Package pdftex.def Info: figure/phaseportrait1-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait1-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (165.26797pt too high) detected at line 1326
+Overfull \vbox (165.26797pt too high) detected at line 1399
  []
 
-[70
+[89
 
- <./figure/phaseportrait1-1.pdf>] <figure/phaseportrait2-1.pdf, id=3263, 686.565pt x 289.08pt>
+ <./figure/phaseportrait1-1.pdf>] <figure/phaseportrait2-1.pdf, id=4107, 686.565pt x 289.08pt>
 File: figure/phaseportrait2-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait2-1.pdf>
-Package pdftex.def Info: figure/phaseportrait2-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait2-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (165.26797pt too high) detected at line 1326
+Overfull \vbox (165.26797pt too high) detected at line 1399
  []
 
-[71
+[90
 
- <./figure/phaseportrait2-1.pdf>] <figure/phaseportrait3-1.pdf, id=3313, 686.565pt x 289.08pt>
+ <./figure/phaseportrait2-1.pdf>] <figure/phaseportrait3-1.pdf, id=4157, 686.565pt x 289.08pt>
 File: figure/phaseportrait3-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait3-1.pdf>
-Package pdftex.def Info: figure/phaseportrait3-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait3-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (165.26797pt too high) detected at line 1326
+Overfull \vbox (165.26797pt too high) detected at line 1399
  []
 
-[72
+[91
 
- <./figure/phaseportrait3-1.pdf>] <figure/phaseportrait4-1.pdf, id=3364, 686.565pt x 289.08pt>
+ <./figure/phaseportrait3-1.pdf>] <figure/phaseportrait4-1.pdf, id=4209, 686.565pt x 289.08pt>
 File: figure/phaseportrait4-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait4-1.pdf>
-Package pdftex.def Info: figure/phaseportrait4-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait4-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (165.26797pt too high) detected at line 1326
+Overfull \vbox (165.26797pt too high) detected at line 1399
  []
 
-[73
+[92
 
- <./figure/phaseportrait4-1.pdf>] <figure/phaseportrait5-1.pdf, id=3415, 686.565pt x 289.08pt>
+ <./figure/phaseportrait4-1.pdf>] <figure/phaseportrait5-1.pdf, id=4259, 686.565pt x 289.08pt>
 File: figure/phaseportrait5-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait5-1.pdf>
-Package pdftex.def Info: figure/phaseportrait5-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait5-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (165.26797pt too high) detected at line 1326
+Overfull \vbox (165.26797pt too high) detected at line 1399
  []
 
-[74
+[93
 
  <./figure/phaseportrait5-1.pdf>]
 File: figure/phaseportrait6-1.pdf Graphic file (type pdf)
  <use figure/phaseportrait6-1.pdf>
-Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1326.
+Package pdftex.def Info: figure/phaseportrait6-1.pdf used on input line 1399.
 (pdftex.def)             Requested size: 342.2953pt x 144.12059pt.
 
-Overfull \vbox (20.14738pt too high) detected at line 1326
+Overfull \vbox (20.14738pt too high) detected at line 1399
  []
 
-[75
+[94
 
-] [76
+] [95
 
-] <figure/mc-stan.png, id=3551, 816.04875pt x 331.2375pt>
+] <figure/mc-stan.png, id=4395, 816.04875pt x 331.2375pt>
 File: figure/mc-stan.png Graphic file (type png)
  <use figure/mc-stan.png>
-Package pdftex.def Info: figure/mc-stan.png used on input line 1359.
+Package pdftex.def Info: figure/mc-stan.png used on input line 1432.
 (pdftex.def)             Requested size: 204.01169pt x 82.80916pt.
- [77
+ [96
 
  <./figure/mc-stan.png>]
 \stana=\box76
 \stanb=\box77
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1401.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1474.
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1401--1401
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1474--1474
 []  \OT1/cmtt/m/n/9 Sigma = []diag_matrix[](lambda) * XTX * []diag_matrix[](lambda) ./ (sigma ^ 2);[] 
  []
 
@@ -1685,47 +1872,47 @@ Overfull \hbox (2.62569pt too wide) in paragraph at lines 1401--1401
 \stansamp=\box80
 \stanres=\box81
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ##              mean se_mean   sd    2.5%     25%     50%     75%   97.5%[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## alpha       -1.04    0.00 0.19   -1.40   -1.16   -1.04   -0.92   -0.68[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## beta[1]      9.71    0.00 0.20    9.32    9.58    9.71    9.84   10.10[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## beta[2]      0.07    0.00 0.10   -0.10    0.01    0.06    0.12    0.31[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## lambda[1]    2.26    0.03 2.55    0.70    1.14    1.61    2.47    7.78[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## lambda[2]    0.03    0.00 0.06    0.01    0.01    0.02    0.03    0.09[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## sigma        1.91    0.00 0.13    1.68    1.82    1.91    2.00    2.20[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## lp__      -224.20    0.02 1.85 -228.60 -225.24 -223.88 -222.82 -221.62[] 
  []
 
 
-Overfull \hbox (2.62569pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.62569pt too wide) in paragraph at lines 1562--1562
 []\OT1/cmtt/m/n/9 ## For each parameter, n_eff is a crude measure of effective sample size,[] 
  []
 
@@ -1737,190 +1924,224 @@ Overfull \hbox (3.08331pt too wide) in paragraph at lines 2--4
  []
 
 )
-Overfull \vbox (0.65019pt too high) detected at line 1548
+Overfull \vbox (229.27223pt too high) detected at line 1627
  []
 
-[78
+[97
 
 ] (./soc-stat-meet.vrb
 Overfull \hbox (3.08331pt too wide) in paragraph at lines 3--4
 [][]  
  []
 
-) [79
+)
+Overfull \vbox (194.27225pt too high) detected at line 1627
+ []
+
+[98
 
 ] (./soc-stat-meet.vrb
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 10--11
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 12--13
 [] 
  []
 
-) [80
+)
+Overfull \vbox (10.21278pt too high) detected at line 1627
+ []
+
+[99
 
 ] (./soc-stat-meet.vrb
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 10--11
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 12--13
 [] 
  []
 
 
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 17--18
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 19--20
 [] 
  []
 
-) [81
+)
+Overfull \vbox (10.21278pt too high) detected at line 1627
+ []
+
+[100
 
 ] (./soc-stat-meet.vrb
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 10--11
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 12--13
 [] 
  []
 
 
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 17--18
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 19--20
 [] 
  []
 
 
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 24--25
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 26--27
 [] 
  []
 
-) [82
+)
+Overfull \vbox (10.21278pt too high) detected at line 1627
+ []
+
+[101
 
 ] (./soc-stat-meet.vrb
-Overfull \hbox (3.08331pt too wide) in paragraph at lines 26--27
+Overfull \hbox (3.08331pt too wide) in paragraph at lines 28--29
 [][]  
  []
 
-)
-Overfull \vbox (80.99548pt too high) detected at line 1548
+
+Overfull \vbox (71.76683pt too high) detected at line 58
  []
 
-[83
+)
+Overfull \vbox (10.21278pt too high) detected at line 1627
+ []
 
-] (./soc-stat-meet.vrb <figure/stanplot-1.pdf, id=3859, 650.43pt x 397.485pt>
+[102
+
+] (./soc-stat-meet.vrb <figure/stanplot-1.pdf, id=4703, 650.43pt x 397.485pt>
 File: figure/stanplot-1.pdf Graphic file (type pdf)
  <use figure/stanplot-1.pdf>
-Package pdftex.def Info: figure/stanplot-1.pdf used on input line 39.
+Package pdftex.def Info: figure/stanplot-1.pdf used on input line 42.
 (pdftex.def)             Requested size: 359.4111pt x 219.64243pt.
 
-Overfull \hbox (17.1158pt too wide) in paragraph at lines 39--39
+Overfull \hbox (17.1158pt too wide) in paragraph at lines 42--42
  [][] 
  []
 
 )
-Overfull \vbox (2.23317pt too high) detected at line 1548
+Overfull \vbox (10.21278pt too high) detected at line 1627
  []
 
-[84
+[103
 
- <./figure/stanplot-1.pdf>] (./soc-stat-meet.vrb <figure/lambdastan-1.pdf, id=3909, 650.43pt x 397.485pt>
+ <./figure/stanplot-1.pdf>] (./soc-stat-meet.vrb <figure/lambdastan-1.pdf, id=4754, 650.43pt x 397.485pt>
 File: figure/lambdastan-1.pdf Graphic file (type pdf)
  <use figure/lambdastan-1.pdf>
-Package pdftex.def Info: figure/lambdastan-1.pdf used on input line 52.
+Package pdftex.def Info: figure/lambdastan-1.pdf used on input line 56.
 (pdftex.def)             Requested size: 359.4111pt x 219.64243pt.
 
-Overfull \hbox (17.1158pt too wide) in paragraph at lines 52--52
+Overfull \hbox (17.1158pt too wide) in paragraph at lines 56--56
  [][] 
  []
 
 )
-Overfull \vbox (2.23317pt too high) detected at line 1548
+Overfull \vbox (10.21278pt too high) detected at line 1627
  []
 
-[85
+[104
 
- <./figure/lambdastan-1.pdf>] [86
+ <./figure/lambdastan-1.pdf>] [105
 
-] [87
+] [106
 
-] [88
+] [107
 
-] [89
+] [108
 
-] (./soc-stat-meet.toc) [90
+] (./soc-stat-meet.toc) [109
 
-] [91
+] [110
 
-] [92
+] [111
+
+] [112
+
+] [113
 
 ]
 \openout4 = `soc-stat-meet.34.vrb'.
 
- (./soc-stat-meet.34.vrb <figure/chunk_name2-1.pdf, id=4266, 361.35pt x 180.675pt>
+pdfTeX warning (ext4): destination with the same identifier (name{c<1>}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1787 \end{frame}
+                  pdfTeX warning (ext4): destination with the same identifier (name{c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1787 \end{frame}
+                   (./soc-stat-meet.34.vrb <figure/chunk_name2-1.pdf, id=5197, 361.35pt x 180.675pt>
 File: figure/chunk_name2-1.pdf Graphic file (type pdf)
  <use figure/chunk_name2-1.pdf>
 Package pdftex.def Info: figure/chunk_name2-1.pdf used on input line 40.
 (pdftex.def)             Requested size: 171.14764pt x 85.57338pt.
 )
-Overfull \vbox (0.68628pt too high) detected at line 1706
+Overfull \vbox (0.68628pt too high) detected at line 1787
  []
 
-[93
+[114
 
- <./figure/chunk_name2-1.pdf>] (./soc-stat-meet.bbl) [94
+ <./figure/chunk_name2-1.pdf>] (./soc-stat-meet.bbl) [115
 
-] [95
-
-
-] (./HMC.bbl) [96
-
-] (./Tools.bbl) [97
-
-] [98
+] [116
 
 
-] [99
+] (./HMC.bbl) [117
+
+] (./Tools.bbl) [118
+
+] [119
+
+
+] [120
 
 ]
 \c@framenumbervorappendix=\count185
- (./soc-stat-meet.toc) [100
+ (./soc-stat-meet.toc) [121
 
 ] (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [101
+) [122
 
-] [102
+] [123
 
-] [103
+] [124
 
-] [104
+] [125
 
 ]
-Overfull \vbox (3.29034pt too high) detected at line 1869
+Overfull \vbox (3.29034pt too high) detected at line 1952
  []
 
-[105
+[126
 
 ]
-Overfull \vbox (3.29034pt too high) detected at line 1869
+Overfull \vbox (3.29034pt too high) detected at line 1952
  []
 
-[106
+[127
 
 ]
-Overfull \vbox (0.58287pt too high) detected at line 1918
+Overfull \vbox (0.58287pt too high) detected at line 2001
  []
 
-[107
+[128
 
-] [108
+] [129
+
+] (./lme.bbl) [130
 
 ]
-\tf@nav=\write8
-\openout8 = `soc-stat-meet.nav'.
+\tf@nav=\write9
+\openout9 = `soc-stat-meet.nav'.
 
-\tf@toc=\write9
-\openout9 = `soc-stat-meet.toc'.
+\tf@toc=\write10
+\openout10 = `soc-stat-meet.toc'.
 
-\tf@snm=\write10
-\openout10 = `soc-stat-meet.snm'.
+\tf@snm=\write11
+\openout11 = `soc-stat-meet.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1943.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1943.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2035.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2035.
  (./soc-stat-meet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1943.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1943.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2035.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2035.
 Package rerunfilecheck Info: File `soc-stat-meet.out' has not changed.
-(rerunfilecheck)             Checksum: 2F20BD42D4333C92BFC587655790E495;1290.
+(rerunfilecheck)             Checksum: 3BF8C24DE18CCBA377E5A8FCF3137C60;1290.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1929,22 +2150,25 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1943.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2035.
  ) 
 Here is how much of TeX's memory you used:
- 24288 strings out of 493089
- 470085 string characters out of 6134842
- 601184 words of memory out of 5000000
- 26810 multiletter control sequences out of 15000+600000
- 36185 words of font info for 127 fonts, out of 8000000 for 9000
+ 24385 strings out of 493089
+ 471139 string characters out of 6134842
+ 604000 words of memory out of 5000000
+ 26842 multiletter control sequences out of 15000+600000
+ 36353 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,28n,65p,458b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on soc-stat-meet.pdf (108 pages, 1969157 bytes).
+ 56i,28n,65p,460b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on soc-stat-meet.pdf (130 pages, 2036399 bytes).
 PDF statistics:
- 4882 PDF objects out of 5155 (max. 8388607)
- 4604 compressed objects within 47 object streams
- 259 named destinations out of 1000 (max. 500000)
+ 5862 PDF objects out of 6186 (max. 8388607)
+ 5552 compressed objects within 56 object streams
+ 314 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

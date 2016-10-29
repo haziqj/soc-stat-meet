@@ -1,4 +1,4 @@
-\documentclass{beamer}  % option [handout] for printing
+\documentclass[]{beamer}  % option [handout] for printing
 %\includeonlyframes{c}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,9 +98,13 @@
 stringstyle=\color{Red},keepspaces=true,showstringspaces=false,
 numbers=none}
 \lstdefinestyle{Rcode}{backgroundcolor=\color[gray]{0.95}}
+%\usepackage{natbib}
+%\usepackage[citestyle=authoryear-comp,bibstyle=authoryear,sorting=ynt]{biblatex}
+%\addbibresource{soc-stat-meet.bib}
 \usepackage[resetlabels,labeled]{multibib}
 \newcites{Tools}{Stuff}
 \newcites{HMC}{HMC}
+\newcites{lme}{lme}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% PRESENTATION SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,24 +223,24 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 \end{frame}
 
 \begin{frame}{Simulation results are good...}
-	\frametitle<2>{...in comparison to: SSVS (George \& McCulloch, 1993)}
-	\frametitle<3>{...in comparison to: KM (Kuo \& Mallick, 1998)}
-	\frametitle<4>{...in comparison to: GVS (Dellaportas et. al., 2011)}
-	\frametitle<5>{...in comparison to: Lasso (Tibshirani, 1994)}
+	\frametitle<2|handout:2>{...in comparison to: SSVS (George \& McCulloch, 1993)}
+	\frametitle<3|handout:3>{...in comparison to: KM (Kuo \& Mallick, 1998)}
+	\frametitle<4|handout:4>{...in comparison to: GVS (Dellaportas et. al., 2011)}
+	\frametitle<5|handout:5>{...in comparison to: Lasso (Tibshirani, 1994)}
 	\vspace{-1mm}
-	\begin{onlyenv}<1>
+	\begin{onlyenv}<1|handout:1>
 		\includegraphics[height=3.1in]{figure/sim5}
 	\end{onlyenv}
-	\begin{onlyenv}<2>
+	\begin{onlyenv}<2|handout:2>
 		\includegraphics[height=3.1in]{figure/sim1}
 	\end{onlyenv}
-	\begin{onlyenv}<3>
+	\begin{onlyenv}<3|handout:3>
 		\includegraphics[height=3.1in]{figure/sim2}
 	\end{onlyenv}
-	\begin{onlyenv}<4>
+	\begin{onlyenv}<4|handout:4>
 		\includegraphics[height=3.1in]{figure/sim3}
 	\end{onlyenv}
-	\begin{onlyenv}<5>
+	\begin{onlyenv}<5|handout:5>
 		\includegraphics[height=3.1in]{figure/sim6}
 	\end{onlyenv}	
 \end{frame}
@@ -246,17 +250,17 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 %	I-priors perform equally well, and in some cases, better than various model selection techniques.
 
 	\begin{itemize}\setlength\itemsep{0.8em}
-		\item[1] \textbf{Modelling aerobic fitness through some exercise data} ($n = 30$, $p = 6$) [SAS/STAT User Guide, 2008]
+		\item[1] \textbf{Modelling aerobic fitness through some exercise data} ($n = 30$, $p = 6$) \cite{Kuo1998}
 			\begin{itemize}
 				\item Agreed with forward selection and backward elimination procedure except in the \texttt{Age} variable.
 				\item \texttt{Age} negatively correlated with \texttt{MaxPulse}.
 			\end{itemize}
-		\item[2] \textbf{Effects of air pollution on mortality rate} ($n = 60$, $p = 15$) [McDonald \& Schwing, 1978]
+		\item[2] \textbf{Effects of air pollution on mortality rate} ($n = 60$, $p = 15$) \cite{McDonald1973}
 			\begin{itemize}
 				\item Which of \texttt{HC}, \texttt{NOx}, and/or \texttt{SO2} affects mortality rate in U.S. metropolitan areas?
 				\item Agreed with ``ridge trace analysis'' in identifying \texttt{SO2}.
 			\end{itemize}
-		\item[3] \textbf{Factors affecting ozone depletion} ($n = 178$, $p = 12,90$) [Casella \& Moreno, 2006]
+		\item[3] \textbf{Factors affecting ozone depletion} ($n = 178$, $p = 12,90$) \cite{Casella2006}
 			\begin{itemize}
 				\item Model obtained had smaller out-of-sample RMSE.
 				\item Selection of squared and two-way interaction terms to improve RMSE without overcomplicating the model.
@@ -270,7 +274,7 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 
 {
 \framenonumber
-\begin{frame}[noframenumbering]
+\begin{frame}<handout:0>[noframenumbering]
 	\tableofcontents[currentsection, sections=1-5, hideallsubsections]
 \end{frame}
 }
@@ -331,54 +335,64 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 
 \end{frame}
 
-\begin{frame}{The $w$ I-prior model}
+\begin{frame}[label=c]{The $w$ I-prior model}
 	\vspace{-3mm}
-
-	\begin{itemize}
-		\item The I-prior for $f$ has the random-effect representation
-		\begin{align*}
-			\begin{gathered}
-				f(\mathbf x_i) = \alpha + f_0(\mathbf x_i) + \sum_{k=1}^n h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_k)w_k \\
-				(w_1,\dots,w_n) \sim \N(\mathbf 0, \boldsymbol\Psi).
-			\end{gathered}
-		\end{align*}
-
-		\item Putting this back into our regression model, we obtain the \textit{w I-prior} model
-		\only<1>{
-		\begin{align*}
-			\begin{gathered}
-				y_i = \alpha + f_0(\mathbf x_i) + \sum_{k=1}^n h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_k)w_k + \epsilon_i \\
-				(w_1, \dots, w_n) \sim \N(\mathbf 0, \boldsymbol{\Psi}) \\
-				(\epsilon_1, \dots, \epsilon_n) \sim \N(\mathbf 0, \boldsymbol{\Psi}^{-1}) \\
-			\end{gathered}
-		\end{align*}
+	
+	\begin{overlayarea}{\textwidth}{8.2cm}
+	
+		\begin{itemize}
+			\item The I-prior for $f$ has the random-effect representation
+			\begin{align*}
+				\begin{gathered}
+					f(\mathbf x_i) = \alpha + f_0(\mathbf x_i) + \sum_{k=1}^n h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_k)w_k \\
+					(w_1,\dots,w_n) \sim \N(\mathbf 0, \boldsymbol\Psi)
+				\end{gathered}
+			\end{align*}		
+		
+		\only<2|handout:0>{
+			\item Putting this back into our regression model, we obtain the \textit{w I-prior} model
+			\begin{align*}
+				\begin{gathered}
+					y_i = \alpha + f_0(\mathbf x_i) + \sum_{k=1}^n h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_k)w_k + \epsilon_i \\
+					(w_1, \dots, w_n) \sim \N(\mathbf 0, \boldsymbol{\Psi}) \\
+					(\epsilon_1, \dots, \epsilon_n) \sim \N(\mathbf 0, \boldsymbol{\Psi}^{-1})
+				\end{gathered}
+			\end{align*}
 		}
-		\uncover<2->{
-		\begin{align*}
-			\begin{gathered}
-				\mathbf y = \boldsymbol\alpha + \mathbf f_0 + \mathbf H_{\boldsymbol\lambda} \mathbf w + \boldsymbol\epsilon \\
-				\mathbf w \sim \N(\mathbf 0, \boldsymbol{\Psi}) \\
-				\boldsymbol\epsilon \sim \N(\mathbf 0, \boldsymbol{\Psi}^{-1})
-			\end{gathered}
-		\end{align*}
-		}
-
-		\only<3>{
-		\item Typically, $(\mathbf H_{\boldsymbol{\lambda}})_{ij} = \sum_{k=1}^p \lambda_k h_k(x_{ik}, x_{jk})$
-		}
-
-		\only<4>{
-		\item Typically, $\mathbf H_{\boldsymbol{\lambda}} = \lambda_1 \mathbf H_1 + \cdots + \lambda_p \mathbf H_p$
+		
+		\uncover<3->{
+			\item Putting this back into our regression model, we obtain the \textit{w I-prior} model
+			\begin{align*}
+				\begin{gathered}
+					\mathbf y = \boldsymbol\alpha + \mathbf f_0 + \mathbf H_{\boldsymbol\lambda} \mathbf w + \boldsymbol\epsilon \\
+					\mathbf w \sim \N(\mathbf 0, \boldsymbol{\Psi}) \\
+					\boldsymbol\epsilon \sim \N(\mathbf 0, \boldsymbol{\Psi}^{-1})
+				\end{gathered}
+			\end{align*}
+			\vspace{-2mm}
 		}
 
-		\uncover<5->{
-		\item Typically, $\mathbf H_{\boldsymbol{\lambda}} = \lambda_1 \mathbf H_1 + \cdots + \lambda_p \mathbf H_p$, $\boldsymbol{\Psi} = \psi\mathbf I_n$, and $\mathbf f_0 = \mathbf 0$.
+		\only<4|handout:0>{
+			\item Typically, $(\mathbf H_{\boldsymbol{\lambda}})_{ij} = \sum_{k=1}^p \lambda_k h_k(x_{ik}, x_{jk})$
 		}
+	
+		\only<5|handout:0>{
+			\item Typically, $\mathbf H_{\boldsymbol{\lambda}} = \lambda_1 \mathbf H_1 + \cdots + \lambda_p \mathbf H_p$
+		}
+	
+		\only<6-7>{
+			\item Typically, $\mathbf H_{\boldsymbol{\lambda}} = \lambda_1 \mathbf H_1 + \cdots + \lambda_p \mathbf H_p$, $\boldsymbol{\Psi} = \psi\mathbf I_n$, and $\mathbf f_0 = \mathbf 0$.
+		}
+	
+		\uncover<7->{
+			\vspace{0.5mm}
+			\item Parameters of interest are $\boldsymbol{\theta} = (\alpha, \lambda_1, \dots, \lambda_p, \psi).$
+		}
+			
+		\end{itemize}	
+		
+	\end{overlayarea}
 
-		\uncover<6->{
-		\item Parameters of interest are $\boldsymbol{\theta} = (\alpha, \lambda_1, \dots, \lambda_p, \psi).$
-		}
-	\end{itemize}
 \end{frame}
 
 \subsection{Estimation}
@@ -392,20 +406,24 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 				\Var[\mathbf y] = \psi \mathbf  H_{\boldsymbol\lambda}^2 + \psi^{-1}\mathbf I_n =: \mathbf V_y
 			\end{gathered}
 		\end{align*}
+		\pause
 		and thus, the marginal log-likelihood is given by
 		\[
 			l(\boldsymbol{\theta}) = - \frac{n}{2} \log(2\pi) - \frac{1}{2} \log | \mathbf V_y | - \frac{1}{2}  (\mathbf y - \boldsymbol\alpha)^\top \mathbf V_y^{-1} (\mathbf y - \boldsymbol\alpha).
 		\]
-
-		\item MLE for intercept is $\hat\alpha = \bar y = \frac{1}{n}\sum_{i=1}^n y_i$.
+		\pause
+		\item MLE for intercept is $\hat\alpha := \bar y = \frac{1}{n}\sum_{i=1}^n y_i$.
+		\pause
 		\item Usually no closed form estimates for $\boldsymbol{\lambda}$ and $\psi$, so use numerical optimisation to find MLE.
-		\item Problem: Convergence is difficult when there are a lot of scale parameters.
+		\pause
+		\item \textit{Problem: Convergence is difficult when there are a lot of scale parameters.}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{EM algorithm}
 	\begin{itemize}
 		\item A more stable method is using the EM algorithm. Treat the random effects $\mathbf w$ as ``missing''.
+		\pause
 		\item The relevant distributions are easy enough to obtain:
 		\begin{itemize}
 			\item $\mathbf y \sim \N(\boldsymbol\alpha, \mathbf V_y)$ \vspace{1pt}
@@ -413,7 +431,8 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 			\item $\begin{pmatrix}\mathbf y \\ \mathbf w\end{pmatrix} \sim \N\Bigg(\begin{pmatrix}\boldsymbol\alpha\\\mathbf 0\end{pmatrix}, \begin{pmatrix} \mathbf V_y & \mathbf \psi \mathbf H_{\boldsymbol\lambda} \\ \psi\mathbf H_{\boldsymbol\lambda} & \psi\mathbf I_n \end{pmatrix}\Bigg)$ \vspace{2pt}
 			\item $\mathbf w | \mathbf y \sim \N\left(\psi\mathbf H_{\boldsymbol\lambda} \mathbf V_y^{-1} (\mathbf y - \boldsymbol\alpha), \mathbf V_y^{-1}\right)$
 		\end{itemize}
-
+		\pause
+		\vspace{0.5mm}
 		\item For $t = 0, 1, \dots$, do:
 		\begin{itemize}
 			\item E-step: Calculate $Q(\boldsymbol\lambda, \psi) = \text{E}_{\mathbf w} \left[\log f(\mathbf y, \mathbf w ; \boldsymbol\theta)  | \mathbf y; \boldsymbol\lambda^{(t)}, \psi^{(t)}, \hat\alpha \right]$.
@@ -421,8 +440,9 @@ opts_chunk$set(echo = TRUE, fig.align = "center", size = "small")
 			\item M-step: $(\boldsymbol\lambda^{(t+1)}, \psi^{(t+1)}) \gets \arg\max_{(\boldsymbol\lambda, \psi)} Q(\boldsymbol\lambda, \psi)$.
 		\end{itemize}
 
-
-		\item Problem: May be very slow to converge.
+		\pause
+		\vspace{0.5mm}
+		\item \textit{Problem: May be very slow to converge.}
 	\end{itemize}
 \end{frame}
 
@@ -526,8 +546,9 @@ tab
 
 \begin{frame}[fragile]{The R/iprior package}
 
-	\only<1-2>{
-		\vspace{-12mm}
+	\begin{overlayarea}{\textwidth}{8cm}
+	
+	\only<1-2|handout:1>{
 		\begin{itemize}
 			\item An R package for regression modelling using I-priors.
 			\begin{itemize}
@@ -538,7 +559,7 @@ tab
 		\end{itemize}
 	}
 	
-	\only<2>{
+	\only<2|handout:1>{
 		\begin{itemize}
 			\item Example: Look at how students' mathematics achievement varies across different high schools (High School \& Beyond dataset).
 		\end{itemize}
@@ -546,24 +567,23 @@ tab
 		\vspace{-26mm}
 		\usebox{\ipriordemoaa}
 	}
-
-	\only<3>{
-		\vspace{2mm}
+			
+	\only<3|handout:2>{
 		\begin{itemize}
 			\item Fit a straight line regressing \texttt{mathach} against \texttt{ses}.
 		\end{itemize}
 		\usebox{\ipriordemob}
 	}
 
-	\only<4>{
+	\only<4|handout:3>{
 		\begin{itemize}
 			\item Obtain the parameter estimates. Can also do \texttt{summary(mod)}.
 		\end{itemize}
 		\usebox{\ipriordemoc}
 	}
 	
-	\only<5>{
-	\vspace{-1mm}
+	\only<5|handout:4>{
+	\vspace{-4mm}
 	\usebox{\ipriordemod} \\
 	\vspace{2em}
 	\vspace{-2mm}
@@ -572,8 +592,8 @@ tab
 	@
 	}
 	
-	\only<6>{
-	\vspace{-1mm}
+	\only<6|handout:5>{
+	\vspace{-4mm}
 	\usebox{\ipriordemoe} \\
 	\vspace{-2mm}
 	<<iprior.demo5b, echo = FALSE, fig.height = 5, fig.width = 8.5, out.width = "98%">>=
@@ -581,8 +601,8 @@ tab
 	@
 	}	
 	
-	\only<7>{
-	\vspace{-1mm}
+	\only<7|handout:6>{
+	\vspace{-4mm}
 	\usebox{\ipriordemof} \\
 	\vspace{-2mm}
 	<<iprior.demo6b, echo = FALSE, fig.height = 5, fig.width = 8.5, out.width = "98%">>=
@@ -590,8 +610,8 @@ tab
 	@
 	}	
 	
-	\only<8>{
-	\vspace{-1mm}
+	\only<8|handout:7>{
+	\vspace{-4mm}
 	\usebox{\ipriordemog} \\
 	\vspace{-2mm}
 	<<iprior.demo7b, echo = FALSE, fig.height = 5, fig.width = 8.5, out.width = "98%">>=
@@ -599,11 +619,13 @@ tab
 	@
 	}	
 
-	\only<9>{
+	\only<9-10|handout:8>{
 		\begin{itemize}
 			\item Compare mean squared errors and log-likelihood values of models.
 		\end{itemize}
 		\usebox{\ipriordemoh}
+	}
+	\only<10|handout:8>{
 		\begin{itemize}
 			\item Other things available:
 			\begin{itemize}
@@ -615,6 +637,9 @@ tab
 			\end{itemize}
 		\end{itemize}
 	}	
+	
+	\end{overlayarea}
+	
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -623,7 +648,7 @@ tab
 
 {
 \framenonumber
-\begin{frame}[noframenumbering]
+\begin{frame}<handout:0>[noframenumbering]
 	\tableofcontents[currentsection, sections=1-5, hideallsubsections]
 \end{frame}
 }
@@ -633,15 +658,17 @@ tab
 \subsection{The beta I-prior (linear) model}
 
 \begin{frame}{The beta I-prior (linear) model}
+	\begin{overlayarea}{\textwidth}{8cm}
+	\vspace{1mm}
 	\begin{itemize}
-		\only<1>{
+		\only<1|handout:0>{
 		\item For ``straight line'' functions in the Canonical RKHS, its kernel $h_{\boldsymbol\lambda}: \mathcal X \times \mathcal X \rightarrow \mathbb R$ is defined as
 		\[
 			h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_j) = \sum_{k=1}^p \lambda_k x_{ik} x_{jk}
 		\]
 		}
 
-		\only<2>{
+		\only<2|handout:0>{
 		\item For ``straight line'' functions in the Canonical RKHS, its kernel $h_{\boldsymbol\lambda}: \mathcal X \times \mathcal X \rightarrow \mathbb R$ is defined as
 		\[
 			\mathbf H_{\boldsymbol\lambda} = \lambda_1 \mathbf X_1\mathbf X_1^\top + \dots + \lambda_p \mathbf X_p\mathbf X_p^\top
@@ -667,12 +694,17 @@ tab
 			}
 			+ \boldsymbol\epsilon
 		\end{align*}
+		}
+		
+		\uncover<5->{
 		which implies $\E[\boldsymbol\beta] = \mathbf 0$ and $\Var[\boldsymbol\beta] = \psi\boldsymbol\Lambda \mathbf X ^\top \mathbf X \boldsymbol\Lambda$.
 		}
+		
 	\end{itemize}
+	\end{overlayarea}
 \end{frame}
 
-\begin{frame}{The beta I-prior (linear) model cont.}
+\begin{frame}[<+->]{The beta I-prior (linear) model cont.}
 	\begin{itemize}
 
 		\item The standard multiple regression model with an I-prior on $\boldsymbol{\beta}$
@@ -693,9 +725,11 @@ tab
 \subsection{Shrinkage properties of I-priors}
 
 \begin{frame}{Shrinkage properties of I-priors}
+	\begin{overlayarea}{\textwidth}{8cm}
+	\vspace{-2mm}
 	\begin{itemize}
-		\item Comparison to ridge regression and Lasso
-		\only<1>{
+		\onslide<1-|handout:1>{\item Comparison to ridge regression and Lasso}
+		\only<1|handout:1>{
 		\begin{align*}
 			\begin{gathered}
 				Ridge: \hat{\boldsymbol\beta}^{R} = \mathop{\arg\min}_{\boldsymbol\beta} \Vert \mathbf y - \mathbf X \boldsymbol{\beta} \Vert^2 + \lambda \sum_{j=1}^p \beta_j^2  \\
@@ -703,7 +737,7 @@ tab
 			\end{gathered}
 		\end{align*}
 		}
-		\only<2->{
+		\only<2-|handout:1>{
 		\begin{align*}
 			\begin{gathered}
 				Ridge: \beta_1, \dots, \beta_p \sim \N(0, 1/\lambda) \\
@@ -711,11 +745,11 @@ tab
 			\end{gathered}
 		\end{align*}
 		}
-		\uncover<3->{
+		\uncover<3-|handout:1>{
 		These only (typically) use one common shrinkage parameter $\lambda$.
 		}
 
-		\uncover<4->{
+		\uncover<4-|handout:2>{
 		\item Other Bayesian Variable Selection priors
 
 		\begin{itemize}
@@ -723,7 +757,11 @@ tab
 			\[
 				\boldsymbol{\beta} \sim \N(\mathbf 0, 10\mathbf I_p).
 			\]
-			\item The objective $g$-prior are also popular
+		}
+		
+		\uncover<5-|handout:2>{
+			\vspace{-6mm}
+			\item The objective $g$-prior is also popular
 			\[
 				\boldsymbol{\beta} \sim \N(\mathbf 0, g(\mathbf X^\top \mathbf X)^{-1}).
 			\]
@@ -731,10 +769,11 @@ tab
 
 		}
 
-		\uncover<5->{
+		\uncover<6-|handout:2>{
 		\item I-priors have individual shrinkage coefficients on the $\boldsymbol{\beta}$, and also makes them correlated a priori.
 		}
 	\end{itemize}
+	\end{overlayarea}
 \end{frame}
 
 \begin{frame}{Shrinkage properties of I-priors cont.}
@@ -748,7 +787,10 @@ tab
 \subsection{Full Bayes estimation}
 
 \begin{frame}{Full Bayes estimation}
+	
+%	\begin{overlayarea}{\textwidth}{6cm}
 	\begin{itemize}
+		\only<1|handout:0>{	
 		\item The fully Bayes beta I-prior model is the following hierarchical model
 		\begin{align}\label{eq:betaiprior2}
 			\begin{gathered}
@@ -762,15 +804,36 @@ tab
 				\psi, \lambda_1^{-2}, \dots,  \lambda_p^{-2} \sim \Gamma(c,d) \\
 			\end{gathered}
 		\end{align}
-		%where the scale parameters $\lambda_1, \dots, \lambda_p$ are the hyperparameters of the model with their own hyperpriors.
+		}
+		
+		\uncover<2>{
+		\item The fully Bayes beta I-prior model is the following hierarchical model
+		\begin{align}\label{eq:betaiprior2}
+			\begin{gathered}
+				{\color{fu-red}
+				y_i = \alpha + \beta_1 x_{i1} + \dots + \beta_p x_{ip} + \epsilon_i} \\
+				{\color{fu-red}
+				\epsilon_i \sim \text{N}(0, \psi^{-1})}  \\
+				{\color{fu-red} i=1,\dots,n} \\ 
+				\\
+				\text{\underline{Priors}} \\
+				{\color[HTML]{377EB8} \alpha \sim \N(0, a^2)} \\
+				{\color[HTML]{4DAF4A} \boldsymbol\beta \sim \N(\mathbf 0, \psi\boldsymbol\Lambda \mathbf X ^\top \mathbf X \boldsymbol\Lambda), \text{ where } \boldsymbol\Lambda = \text{diag}[\lambda_1, \dots, \lambda_p] } \\
+				{\color[HTML]{984EA3} \psi, \lambda_1^{-2}, \dots,  \lambda_p^{-2} \sim \Gamma(c,d) } \\
+			\end{gathered}
+		\end{align}	
 
 		\item The posterior distribution is
 		\begin{align*}
 			f(\alpha, \boldsymbol{\beta}, \psi, \boldsymbol{\lambda} | \mathbf y)
 			&\propto f(\mathbf y | \alpha, \boldsymbol{\beta}, \psi, \boldsymbol{\lambda}) f(\alpha, \boldsymbol{\beta}, \psi, \boldsymbol{\lambda}) \\
-			&\propto f(\mathbf y | \alpha, \boldsymbol{\beta}, \psi) f(\alpha) f(\boldsymbol{\beta} | \psi, \boldsymbol{\lambda}) f(\psi) f(\lambda_1)\cdots f(\lambda_p)
+			&\propto {\color{fu-red} f(\mathbf y | \alpha, \boldsymbol{\beta}, \psi)} {\color[HTML]{377EB8} f(\alpha)} {\color[HTML]{4DAF4A} f(\boldsymbol{\beta} | \psi, \boldsymbol{\lambda}) } {\color[HTML]{984EA3} f(\psi) f(\lambda_1)\cdots f(\lambda_p) }
 		\end{align*}
+		}
+
 	\end{itemize}
+%	\end{overlayarea}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -847,13 +910,13 @@ mod <- "
 \newsavebox{\ipriorjagsc}
 \begin{lrbox}{\ipriorjagsc}
 <<iprior.jags3, eval = TRUE, message = FALSE, warning = FALSE, cache = TRUE, size = "scriptsize">>=
-(mod.fit <- run.jags(mod, n.chains = 4, sample = 2500, method = "parallel",  
-                     n.sims = 4))
+(mod.fit <- run.jags(mod, n.chains = 4, sample = 2500, thin = 10, 
+                     method = "parallel", n.sims = 4))
 @
 \end{lrbox}
 
 \begin{frame}[fragile]{Estimation using JAGS}
-	\only<1>{
+	\only<1-2|handout:1>{
 		\begin{itemize}
 			\item Fit Bayesian models using JAGS (or WinBUGS or OpenBUGS).
 			\item In R, many packages to run JAGS models: \texttt{rjags}, \texttt{R2Jags}, \texttt{runjags}.
@@ -863,11 +926,11 @@ mod <- "
 		\usebox{\ipriorjagsforshow}
 	}
 	
-	\only<2>{\vspace{-1mm} \usebox{\ipriorjagsb}}
+	\only<3|handout:2>{\vspace{-1mm} \usebox{\ipriorjagsb}}
 	
-	\only<3>{\vspace{-2mm} \usebox{\ipriorjagsc}}
+	\only<4|handout:3>{\vspace{-2mm} \usebox{\ipriorjagsc}}
 	
-	\only<4>{
+	\only<5|handout:4>{
 		<<iprior.jags4, eval = TRUE, echo = FALSE, fig.height = 4.5>>=
 		tmp <- as.mcmc.list(mod.fit)
 		for(i in 1:4) tmp[[i]] <- mcmc(tmp[[i]], start = 1)
@@ -876,7 +939,7 @@ mod <- "
 		@
 	}
 	
-	\only<5>{
+	\only<6|handout:5>{
 		\vspace{-1mm}
 		<<iprior.jags5, eval = TRUE, echo = FALSE, fig.width = 9, fig.height = 5.5, out.width = "105%">>=
 		ggs_traceplot(mod.fit.ggs, family = "lambda")
@@ -902,7 +965,7 @@ mod <- "
 
 {
 \framenonumber
-\begin{frame}[noframenumbering]
+\begin{frame}<handout:0>[noframenumbering]
 	\tableofcontents[currentsection, sections=1-5, hideallsubsections]
 \end{frame}
 }
@@ -913,9 +976,8 @@ mod <- "
 
 \begin{frame}{Introduction}
 	\begin{itemize}
-		\item Introduced as Hybrid Monte Carlo by Duane et. al. 1987 for use in lattice models of quantum theory.
-		\item Statistical applications started appearing in the 1990s: Neal (1993, 1996), Isharawan (1999), Liu (2001).
-		\item Development of HMC software (Stan) began in 2011, motivated by the difficulties faced when doing full Bayesian inference on multilevel generalised linear models (Gelman and Hill, 2007).
+		\item Introduced as Hybrid Monte Carlo \citeHMC{duane1987hybrid} for use in lattice models of quantum theory. Statistical applications started appearing sparsely in the 1990s.
+		\item Development of HMC software (Stan) began in 2011, motivated by the difficulties faced when doing full Bayesian inference on multilevel generalised linear models.
 		\item The basic idea behind HMC is to use Hamiltonian dynamics to propose new states, instead of ``random walks''.
 	\end{itemize}
 
@@ -936,6 +998,7 @@ mod <- "
 \end{frame}
 
 \begin{frame}{Hamiltonian dynamics}
+	\begin{overlayarea}{\textwidth}{6.5cm}
 	\begin{itemize}
 		\item A reformulation of classical mechanics which describes motion through Hamilton's equations:
 		\only<1-2>{
@@ -982,6 +1045,7 @@ mod <- "
 		\]
 		}
 	\end{itemize}
+	\end{overlayarea}
 \end{frame}
 
 \begin{frame}{Hamiltonian dynamics cont.}
@@ -1007,20 +1071,27 @@ mod <- "
 		\end{center}
 		\vspace{-1.5mm}
 
-		\pause
+		\onslide<2->{
 		\item Solve the system of differential equations using Euler's method, or the more commonly used leapfrog integration:
+		}
 		\begin{align*}
+		\onslide<2->{
 			{\color{fu-red} \text{Step 1: }} &
 			\mathbf p(t + \epsilon/2)
 			= \mathbf p(t) - \frac{\epsilon}{2} \cdot \frac{\partial}{\partial \mathbf x} U \big( \mathbf x(t) \big)  \\
+		}
+		\onslide<3->{
 			{\color{fu-red} \text{Step 2: }} &
 			\hphantom{/2} \mathbf x(t + \epsilon)
 			=  \mathbf x(t) + \epsilon \cdot \frac{\partial}{\partial \mathbf p} K \big( \mathbf p(t + \epsilon / 2) \big)  \\
+		}
+		\onslide<4->{
 			{\color{fu-red} \text{Step 3: }} &
 			 \hphantom{/2} \mathbf p(t + \epsilon)
 			 = \mathbf p(t + \epsilon/2) - \frac{\epsilon}{2} \cdot \frac{\partial}{\partial \mathbf x} U \big( \mathbf x(t + \epsilon) \big)
+		}
 		\end{align*}
-		Steps 1-3 are repeated $L$ times.
+		\onslide<5->{Steps 1-3 are repeated $L$ times.}
 
 	\end{itemize}
 \end{frame}
@@ -1043,7 +1114,7 @@ mod <- "
 		\]
 		where $k$ is Boltzmann's constant, $T$ is the absolute temperature of the system, and $Z$ is a normalising constant.
 		}
-		\only<3-5>{
+		\only<3-5|handout:0>{
 		\item {\color{gray!50} Given some energy function $E(\boldsymbol\theta)$ over states $\boldsymbol\theta$, the \textit{canonical distribution} of the states $\boldsymbol\theta$ is given by the pdf}
 		\[
 			f(\mathbf x, \mathbf p) = \frac{1}{Z} \exp \left[ -\frac{H(\mathbf x, \mathbf p)}{kT} \right].
@@ -1070,17 +1141,19 @@ mod <- "
 
 \begin{frame}{Choosing the energy functions}
 	\begin{itemize}
-		\item Using a \textit{quadratic kinetic energy function} $K(\mathbf p) = \mathbf p^\top \mathbf M^{-1} \mathbf p / 2$ yields a normal density function
+		\item Using a \textit{quadratic kinetic energy function} $K(\mathbf p) = \mathbf p^\top \mathbf M^{-1} \mathbf p / 2$ yields the probability density function
 		\begin{align*}
-			f(\mathbf p) \propto \exp \left[ -\frac{1}{2} \mathbf p^\top \mathbf M^{-1} \mathbf p \right],
+			f(\mathbf p) \propto \exp \left[ -\frac{1}{2} \mathbf p^\top \mathbf M^{-1} \mathbf p \right] \onslide<2->{,}
 		\end{align*}
+		\pause
 		implying $\mathbf p \sim \N_d(\mathbf 0, \mathbf M)$, where $\mathbf M = \text{diag}[m_1, \dots, m_d]$ is the mass matrix.
 
 		\pause
 		\item As for the potential energy, choose a function such that
 		\[
-			 U(\mathbf x) = -\log f(\mathbf x),
+			 U(\mathbf x) = -\log f(\mathbf x) \onslide<4->{,}
 		\]
+		\pause
 		since $f(\mathbf x) \propto \exp [ - U( \mathbf x)]$, where $f(\mathbf x)$ is the target density from which we wish to sample.
 
 	\end{itemize}
@@ -1111,7 +1184,7 @@ mod <- "
 
 	\vspace{-10mm}
 	
-	\only<4>{
+	\only<4|handout:0>{
 	<<phaseportrait1, echo = FALSE, fig.width = 9.5, fig.height = 4>>=
 	sho <- function(t, y, parameters) {
 	  x <- y[1]
@@ -1134,7 +1207,7 @@ mod <- "
 	@
 	}
 	
-	\only<5>{
+	\only<5|handout:0>{
 	<<phaseportrait2, echo = FALSE, fig.width = 9.5, fig.height = 4>>=
 	sho <- function(t, y, parameters) {
 	  x <- y[1]
@@ -1171,7 +1244,7 @@ mod <- "
 	@
 	}
 	
-	\only<6>{
+	\only<6|handout:0>{
 	<<phaseportrait3, echo = FALSE, fig.width = 9.5, fig.height = 4>>=	
 	# Phase portrait
 	
@@ -1200,7 +1273,7 @@ mod <- "
 	@
 	}
 
-	\only<7>{
+	\only<7|handout:0>{
 	<<phaseportrait4, echo = FALSE, fig.width = 9.5, fig.height = 4>>=	
 	# Phase portrait
 	
@@ -1241,7 +1314,7 @@ mod <- "
 	@
 	}
 	
-	\only<8>{
+	\only<8|handout:0>{
 	<<phaseportrait5, echo = FALSE, fig.width = 9.5, fig.height = 4>>=	
 	# Phase portrait
 	
@@ -1517,33 +1590,36 @@ print(fit.stan)
 
 
 \begin{frame}[fragile]{Stan example}
-	\only<1>{\vspace{-2mm} \usebox{\stana}}
-	\only<2>{\vspace{-2mm} \usebox{\stanb}}
+	\only<1|handout:1>{\vspace{-2mm} \usebox{\stana}}
+	\only<2|handout:2>{\vspace{-2mm} \usebox{\stanb}}
 	
-	\only<3-5>{
+	\begin{overlayarea}{\textwidth}{8cm}
+	\only<3-5|handout:3>{
+		\vspace{4mm}
 		\begin{itemize}
 			\item Compile the Stan model.
 		\end{itemize}
 		\usebox{\stancomp}
 	}
 	
-	\only<4-5>{
+	\only<4-5|handout:3>{
 		\begin{itemize}
 			\item Set the data for Stan to use.
 		\end{itemize}
 		\usebox{\standata}
 	}
 	
-	\only<5-5>{
+	\only<5-5|handout:3>{
 		\begin{itemize}
 			\item Begin sampling
 		\end{itemize}
 		\usebox{\stansamp}
 	}
 	
-	\only<6>{\vspace{-1mm} \usebox{\stanres}}
+	\only<6|handout:4>{\vspace{-4mm} \usebox{\stanres}}
 	
-	\only<7>{
+	\only<7|handout:5>{
+	\vspace{-4mm}
 	<<stanplot, eval = TRUE, echo = FALSE, fig.width = 9, fig.height = 5.5, out.width = "105%">>=
 	a1 <- stan2coda(fit.stan)
 	fit.ggs <- ggs(a1[, c("beta[1]", "beta[2]", "lambda[1]", "lambda[2]", "sigma")])
@@ -1552,12 +1628,15 @@ print(fit.stan)
 	@
 	}
 	
-	\only<8>{
+	\only<8|handout:6>{
+	\vspace{-4mm}
 	<<lambdastan, eval = TRUE, echo = FALSE, fig.width = 9, fig.height = 5.5, out.width = "105%">>=
 	ggs_running(fit.ggs, family = "lambda")
 	@
 	}
 		
+	\end{overlayarea}
+	
 \end{frame}
 
 \begin{frame}{HMC unable to sample from discrete distributions}
@@ -1592,7 +1671,7 @@ print(fit.stan)
 		\]
 		where $m = 1, \dots, M$ is the index for the posterior draws.
 
-		\item Problem: For Bayesian Variable Selection models, this is intractable because need to sum over all $2^p$ models.
+		\item \textit{Problem: For Bayesian Variable Selection models, this is intractable because need to sum over all $2^p$ models.}
 	\end{itemize}
 \end{frame}
 
@@ -1607,11 +1686,11 @@ print(fit.stan)
 			\end{cases}
 		\end{align*}
 		\item Probabilities are preserved: $\P[\gamma_j = 1] = \P[Z_j \geq 0] = 0.5$.
-		\item Problems:
+		\item \textit{Problems:
 		\begin{itemize}
 			\item Does this make sense?
 			\item The discrete variables still ``exist'', so possibly derivatives will break.
-		\end{itemize}
+		\end{itemize}}
 	\end{itemize}
 \end{frame}
 
@@ -1619,7 +1698,7 @@ print(fit.stan)
 	\begin{itemize}
 		\item Sample the continuous parameters $\boldsymbol\theta$ using HMC.
 		\item At each iteration $m$, use $\boldsymbol\theta^{(m)}$ in the Gibbs conditional densities to sample $\boldsymbol{\gamma}$.
-		\item Problem: Have to write code for the HMC sampler, which won't include all the automatic tuning that Stan has.
+		\item \textit{Problem: Have to write code for the HMC sampler, which won't include all the automatic tuning that Stan has.}
 	\end{itemize}
 \end{frame}
 
@@ -1629,7 +1708,7 @@ print(fit.stan)
 
 {
 \framenonumber
-\begin{frame}[noframenumbering]
+\begin{frame}<handout:0>[noframenumbering]
 	\tableofcontents[currentsection, sections=1-5, hideallsubsections]
 \end{frame}
 }
@@ -1642,12 +1721,14 @@ print(fit.stan)
 			\item The individual scale parameters $\lambda_1,\dots,\lambda_p$ are important.
 			\item We have used ML estimate for $\boldsymbol{\lambda}$ in our Bayesian model.
 		\end{itemize}
-		\item Things I want to do
+		\pause
+		\item To-do list:
 		\begin{itemize}
 			\item Any model consistency results for Bayesian variable selection models?
 			\item Any mathematical justification as to why we should use individual scale parameters?
-			\item How does the off-diagonal elements in the I-prior covariance matrix help things?
+			\item Does the off-diagonal elements in the I-prior covariance matrix affect variable selection results in multicollinearity situations?
 		\end{itemize}
+		\pause
 		\item Wishlist: Make HMC work for Bayesian variable selection models.
 	\end{itemize}
 \end{frame}
@@ -1713,7 +1794,8 @@ print(fit.stan)
 }
 
 {\framenonumber
-\begin{frame}[t,allowframebreaks,noframenumbering]{HMC References}	
+\begin{frame}[t,noframenumbering]{HMC References}	
+	\addtocounter{framenumber}{-1}
 	\bibliographystyleHMC{apalike}
 	\nociteHMC{*}
 	\bibliographyHMC{soc-stat-hmc}	
@@ -1722,6 +1804,7 @@ print(fit.stan)
 
 {\framenonumber
 \begin{frame}[t,allowframebreaks,noframenumbering]{Stuff}	
+	\addtocounter{framenumber}{-1}
 	\bibliographystyleTools{apalike}
 	\nociteTools{*}
 	\bibliographyTools{soc-stat-tools}	
@@ -1748,8 +1831,8 @@ print(fit.stan)
 
 {
 \framenonumber
-\begin{frame}[noframenumbering]
-	\tableofcontents[sections=6]
+\begin{frame}<handout:0>[noframenumbering]
+	\tableofcontents[sections=7]
 \end{frame}
 }
 
@@ -1783,7 +1866,7 @@ print(fit.stan)
 
 \begin{frame}{Minimising profiled deviance (à la \texttt{lme4}) cont.}
 	\begin{itemize}
-		\only<1>{
+		\only<1|handout:0>{
 		\item The density of interest is $f(\mathbf y) = \int h(\mathbf u) \,\text{d}\mathbf u$, where
 		\begin{align*}
 			h(\mathbf u) &= f(\mathbf y | \mathbf u) f(\mathbf u) \\
@@ -1908,7 +1991,7 @@ print(fit.stan)
 
 	\begin{itemize}
 		\item Our scale parameters are contained in $\boldsymbol{\theta}=(\lambda_1/\sigma^2, \dots, \lambda_p/\sigma^2)$.
-		\item Problem: Our $\mathbf Z$ matrix is dense, so not able to use sparse Cholesky methods.
+		\item \textit{Problem: Our $\mathbf Z$ matrix is dense, so not able to use sparse Cholesky methods.}
 	\end{itemize}
 \end{frame}
 
@@ -1932,6 +2015,15 @@ print(fit.stan)
 		\item $\hat\lambda_k^{MAP} = \hat\lambda_k^{ML}$ if the beta I-prior model is marginalised over $\boldsymbol{\beta}$, and a uniform prior is used for each $\lambda_k$.
 	\end{itemize}
 \end{frame}
+
+{\framenonumber
+\begin{frame}[t,allowframebreaks,noframenumbering]
+\frametitle[lme4 references]{\texttt{lme4} References}	
+	\bibliographystylelme{apalike}
+	\nocitelme{*}
+	\bibliographylme{soc-stat-lme}
+\end{frame}
+}
 
 \backupend
 
