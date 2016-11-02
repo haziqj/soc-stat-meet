@@ -10,12 +10,12 @@
 \beamer@subsectionintoc {3}{1}{The beta I-prior (linear) model}{43}{0}{3}
 \beamer@subsectionintoc {3}{2}{Shrinkage properties of I-priors}{50}{0}{3}
 \beamer@subsectionintoc {3}{3}{Full Bayes estimation}{57}{0}{3}
-\beamer@sectionintoc {4}{Hamiltonian Monte Carlo}{66}{0}{4}
-\beamer@subsectionintoc {4}{1}{Hamiltonian dynamics}{67}{0}{4}
-\beamer@subsectionintoc {4}{2}{The HMC algorithm}{77}{0}{4}
-\beamer@subsectionintoc {4}{3}{HMC software}{96}{0}{4}
-\beamer@sectionintoc {5}{Summary}{109}{0}{5}
-\beamer@sectionintoc {6}{End}{120}{0}{6}
-\beamer@sectionintoc {7}{Additional material}{122}{1}{7}
-\beamer@subsectionintoc {7}{1}{\texttt {lme4} methods}{122}{1}{7}
-\beamer@subsectionintoc {7}{2}{MLE vs Bayes for scale parameters}{129}{1}{7}
+\beamer@sectionintoc {4}{Hamiltonian Monte Carlo}{65}{0}{4}
+\beamer@subsectionintoc {4}{1}{Hamiltonian dynamics}{66}{0}{4}
+\beamer@subsectionintoc {4}{2}{The HMC algorithm}{76}{0}{4}
+\beamer@subsectionintoc {4}{3}{HMC software}{95}{0}{4}
+\beamer@sectionintoc {5}{Summary}{108}{0}{5}
+\beamer@sectionintoc {6}{End}{119}{0}{6}
+\beamer@sectionintoc {7}{Additional material}{121}{1}{7}
+\beamer@subsectionintoc {7}{1}{\texttt {lme4} methods}{121}{1}{7}
+\beamer@subsectionintoc {7}{2}{MLE vs Bayes for scale parameters}{128}{1}{7}

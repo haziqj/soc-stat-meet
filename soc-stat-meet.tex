@@ -323,12 +323,12 @@ follow along at: \href{https://haziqjamil.github.io/}{\color{fu-red} \textbf{htt
 
 	\begin{itemize}
 		\item For $i = 1, \dots, n$, consider the regression model
-		\begin{align*}
+		\begin{align}\label{eq:linmod}
 			\begin{gathered}
 				y_i = \alpha + f(\mathbf x_i) + \epsilon_i \\
 				(\epsilon_1, \dots, \epsilon_n) \sim \N(\mathbf 0, \boldsymbol{\Psi}^{-1})
 			\end{gathered}
-		\end{align*}
+		\end{align}
 		where $f \in \mathcal F$, $y_i \in \mathbb R$, and $\mathbf x_i = (x_{i1}, \dots, x_{ip}) \in \mathcal X$.
 
 	\pause
@@ -385,7 +385,7 @@ follow along at: \href{https://haziqjamil.github.io/}{\color{fu-red} \textbf{htt
 			\end{align*}		
 		
 		\only<2|handout:0>{
-			\item Putting this back into our regression model, we obtain the \textit{w I-prior} model
+			\item Putting this back into our regression model \eqref{eq:linmod}, we obtain the \textit{w I-prior} model
 			\begin{align*}
 				\begin{gathered}
 					y_i = \alpha + f_0(\mathbf x_i) + \sum_{k=1}^n h_{\boldsymbol\lambda}(\mathbf x_i, \mathbf x_k)w_k + \epsilon_i \\
@@ -396,7 +396,7 @@ follow along at: \href{https://haziqjamil.github.io/}{\color{fu-red} \textbf{htt
 		}
 		
 		\uncover<3->{
-			\item Putting this back into our regression model, we obtain the \textit{w I-prior} model
+			\item Putting this back into our regression model \eqref{eq:linmod}, we obtain the \textit{w I-prior} model
 			\begin{align*}
 				\begin{gathered}
 					\mathbf y = \boldsymbol\alpha + \mathbf f_0 + \mathbf H_{\boldsymbol\lambda} \mathbf w + \boldsymbol\epsilon \\
@@ -1038,7 +1038,7 @@ Y <- X %*% beta.true + \hlkwd{rnorm}(n, mean = 0, sd = 2)
 \end{lrbox}
 
 \begin{frame}[fragile]{Estimation using JAGS}
-	\only<1-2|handout:1>{
+	\only<1|handout:1>{
 		\begin{itemize}
 			\item Fit Bayesian models using JAGS (or WinBUGS or OpenBUGS).
 			\item In R, many packages to run JAGS models: \texttt{rjags}, \texttt{R2Jags}, \texttt{runjags}.
@@ -1048,11 +1048,11 @@ Y <- X %*% beta.true + \hlkwd{rnorm}(n, mean = 0, sd = 2)
 		\usebox{\ipriorjagsforshow}
 	}
 	
-	\only<3|handout:2>{\vspace{-1mm} \usebox{\ipriorjagsb}}
+	\only<2|handout:2>{\vspace{-1mm} \usebox{\ipriorjagsb}}
 	
-	\only<4|handout:3>{\vspace{-2mm} \usebox{\ipriorjagsc}}
+	\only<3|handout:3>{\vspace{-2mm} \usebox{\ipriorjagsc}}
 	
-	\only<5|handout:4>{
+	\only<4|handout:4>{
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
@@ -1065,7 +1065,7 @@ Y <- X %*% beta.true + \hlkwd{rnorm}(n, mean = 0, sd = 2)
 \end{knitrout}
 	}
 	
-	\only<6|handout:5>{
+	\only<5|handout:5>{
 		\vspace{-1mm}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
@@ -1295,7 +1295,7 @@ Y <- X %*% beta.true + \hlkwd{rnorm}(n, mean = 0, sd = 2)
 \begin{frame}{Hamiltonian Monte Carlo}
 	\begin{itemize}
 		\vspace{-3mm}
-		\item To sample variables $\mathbf x$ , introduce momentum variables $\mathbf p$ and sample jointly from $f(\mathbf x, \mathbf p) = f(\mathbf x) f(\mathbf p)$.
+		\item To sample variables $\mathbf x$, introduce momentum variables $\mathbf p$ and sample jointly from $f(\mathbf x, \mathbf p) = f(\mathbf x) f(\mathbf p)$.
 		
 		\pause
 		\item The Hamiltonian Monte Carlo (HMC) algorithm

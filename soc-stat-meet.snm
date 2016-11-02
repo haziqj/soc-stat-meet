@@ -1,4 +1,5 @@
 \beamer@slide {eq:ipriorbvs}{3}
+\beamer@slide {eq:linmod}{13}
 \beamer@slide {default}{15}
 \beamer@slide {c<1>}{16}
 \beamer@slide {c}{16}
@@ -11,6 +12,6 @@
 \beamer@slide {eq:betaiprior}{48}
 \beamer@slide {eq:betaiprior2}{57}
 \beamer@slide {eq:betaiprior2}{57}
-\beamer@slide {c<1>}{114}
-\beamer@slide {c}{114}
-\beamer@slide {eq:lme4dev}{125}
+\beamer@slide {c<1>}{113}
+\beamer@slide {c}{113}
+\beamer@slide {eq:lme4dev}{124}
